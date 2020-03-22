@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+    <link href="styles/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <main id="main">
+      <header class="header" id="header"> 
+        <div class="flex-wrap">
+          <div class="col-auto">
+            <h3 class="header__h3">Welcome back, Kyrill</h3>
+            <h1 class="header__h1">Thanks for being with us.</h1>
+          </div>
+          <div class="col-auto ml-auto"><a class="header__message" href="chat.html">
+              <svg class="icon icon--message">
+                <use xlink:href="img/svg-sprite.svg#message"></use>
+              </svg></a>
+            <div class="header__notifications">
+              <div class="header__notifications--badge"></div>
+              <svg class="icon icon--notifications">
+                <use xlink:href="img/svg-sprite.svg#notifications"></use>
+              </svg>
+            </div>
+            <div class="header__user"><a class="header__user-avatar" href="" style="background-image:url('img/pic-8.jpg')"></a>
+              <div class="header__user-inner">
+                <div class="header__user--name">Kirill Moneylover</div>
+                <div class="header__user--date">Member since 2019</div>
+                <div class="header__user--icon">
+                  <svg class="icon icon--arrow-down">
+                    <use xlink:href="img/svg-sprite.svg#arrow-down"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="header__user-dropdown"> 
+                <div class="header__user-dropdown--inner">
+                  <div class="header__user-list">
+                    <div class="header__user-list-item"><a class="header__user-list-link" href="">Настройки</a></div>
+                    <div class="header__user-list-item"><a class="header__user-list-link" href="">Выход</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="flex-wrap">
+        <div class="aside">
+          <div class="menu">
+            <div class="menu__item"><a class="menu__link menu__link--active" href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--chart">
+                    <use xlink:href="img/svg-sprite.svg#chart"></use>
+                  </svg>
+                </div><span class="menu__item-name">History</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--statistics">
+                    <use xlink:href="img/svg-sprite.svg#statistics"></use>
+                  </svg>
+                </div><span class="menu__item-name">Trading</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--settings">
+                    <use xlink:href="img/svg-sprite.svg#settings"></use>
+                  </svg>
+                </div><span class="menu__item-name">Tasks</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--strategy">
+                    <use xlink:href="img/svg-sprite.svg#strategy"></use>
+                  </svg>
+                </div><span class="menu__item-name">Strategies</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--support">
+                    <use xlink:href="img/svg-sprite.svg#support"></use>
+                  </svg>
+                </div><span class="menu__item-name">Support</span></a></div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="flex-p-wrap mt-30"> 
+            <div class="col-1-4"> 
+              <div class="inner-block p-cont min-h-full">
+                <div class="form-row"> 
+                  <label class="form-row__label">Биржа</label>
+                  <select class="select-styler select-styler__icon">
+                    <option class="ico-s-binance">Binance</option>
+                    <option class="ico-s-binance">Binance 2</option>
+                    <option class="ico-s-binance">Binance 3</option>
+                  </select>
+                </div>
+                <div class="form-row"> 
+                  <label class="form-row__label">Ваши активы</label>
+                  <div class="tabs tabs__assets">
+                    <div class="tabs__list flex-wrap">
+                      <div class="col-1-2">
+                        <div class="tabs__list-item tabs__list-item--active" data-tab="#assets-btc"> 
+                          <div class="coin-price">
+                            <div class="coin-price__num"> <span>0.92</span>1500</div>
+                            <div class="coin-price__name">
+                              <svg class="coin-price__icon icon icon--btc">
+                                <use xlink:href="img/svg-sprite.svg#btc"></use>
+                              </svg><span>BTC</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-1-2">
+                        <div class="tabs__list-item" data-tab="#assets-bch"> 
+                          <div class="coin-price">
+                            <div class="coin-price__num"> <span>0.32</span>1500</div>
+                            <div class="coin-price__name">
+                              <svg class="coin-price__icon icon icon--bch">
+                                <use xlink:href="img/svg-sprite.svg#bch"></use>
+                              </svg><span>BCH</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabs__cont">
+                      <div class="tabs__item tabs__item--active" id="assets-btc"> 
+                        <select class="select-coin">
+                          <option data-coin="btc" data-icon="btc" data-num="&lt;span&gt;0.32&lt;/span&gt;1500"> </option>
+                          <option data-coin="bch" data-icon="bch" data-num="&lt;span&gt;0.92&lt;/span&gt;1500"></option>
+                        </select>
+                      </div>
+                      <div class="tabs__item" id="assets-bch"> 
+                        <select class="select-coin">
+                          <option data-coin="bch" data-icon="bch" data-num="&lt;span&gt;0.92&lt;/span&gt;1500"></option>
+                          <option data-coin="btc" data-icon="btc" data-num="&lt;span&gt;0.32&lt;/span&gt;1500"> </option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row mt-30">
+                  <label class="form-row__label">Сумма скупки</label>
+                  <div class="spinner flex-wrap">
+                    <div class="col-auto mr-auto"><a class="spinner__btn spinner__btn--minus" href=""></a></div>
+                    <div class="col"> 
+                      <div class="spinner__cont">
+                        <div class="flex-wrap"> 
+                          <div class="col-1-2 text-center">
+                            <input class="spinner__input spinner__input--num" type="text" value="0.33">
+                          </div>
+                          <div class="col-1-2 text-center">
+                            <svg class="spinner__icon icon icon--bch">
+                              <use xlink:href="img/svg-sprite.svg#bch"></use>
+                            </svg>
+                            <div class="spinner__coin">bth</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto"><a class="spinner__btn spinner__btn--pluse" href=""></a></div>
+                  </div>
+                  <div class="btn-row">
+                    <div class="btn-row__item col-1-4"><a class="btn btn__small btn__full" href="">25%</a></div>
+                    <div class="btn-row__item col-1-4"><a class="btn btn__small btn__full" href="">50%</a></div>
+                    <div class="btn-row__item col-1-4"><a class="btn btn__small btn__full" href="">75%</a></div>
+                    <div class="btn-row__item col-1-4"><a class="btn btn__small btn__full" href="">100%</a></div>
+                  </div>
+                </div>
+                <div class="form-row"> 
+                  <button class="btn btn__blue btn__full btn__mega" type="submit">Submit</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-3-4"> 
+              <div class="inner-block p-cont-mega">
+                <div class="flex-wrap flex-p-large">
+                  <div class="col-1-2"> 
+                    <div class="flex-p-wrap"> 
+                      <div class="col-1-2">
+                        <div class="form-row"> 
+                          <div class="form-row__label"> </div>
+                          <select class="select-icon">
+                            <option data-icon="litecoin">Litecoin</option>
+                            <option data-icon="binance">Binance </option>
+                            <option data-icon="binance">Binance 3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-1-2">
+                        <div class="form-row__label"></div>
+                        <div class="form-row__text">Текущая цена</div>
+                        <div class="form-row__price">0.32<span class="form-row__price--num">150 </span><span class="form-row__price--currency">USD</span></div>
+                      </div>
+                    </div>
+                    <div class="flex-p-wrap mt-20">
+                      <div class="col-1-2">
+                        <div class="form-row"> 
+                          <label class="form-row__label">Закупать по цене</label>
+                          <div class="slider" data-value="30"></div>
+                        </div>
+                      </div>
+                      <div class="col-1-2">
+                        <div class="form-row"> 
+                          <div class="spinner-v"> <a class="spinner-v__btn spinner-v__btn--up" href=""></a><a class="spinner-v__btn spinner-v__btn--down" href=""></a>
+                            <div class="spinner-v__num">0.31<span>150</span></div>
+                            <div class="spinner-v__percent">-17%</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex-p-wrap mt-20">
+                      <div class="col-1-2">
+                        <div class="form-row"> 
+                          <label class="form-row__label">Закупать по цене</label>
+                          <div class="slider slider__blue" data-value="50"></div>
+                        </div>
+                      </div>
+                      <div class="col-1-2">
+                        <div class="form-row"> 
+                          <div class="spinner-v"> <a class="spinner-v__btn spinner-v__btn--up" href=""></a><a class="spinner-v__btn spinner-v__btn--down" href=""></a>
+                            <div class="spinner-v__num text-blue-2">-13%                    </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-row mt-20"><a class="btn btn__blue btn__mega btn__full" href="">Submit</a></div>
+                  </div>
+                  <div class="col-1-2"> 
+                    <div class="coin-stats">
+                      <div class="coin-stats__cont">
+                        <div class="flex-wrap"> 
+                          <div class="coin-stats__icon flex-center-cont">
+                            <svg class="icon icon--litecoin">
+                              <use xlink:href="img/svg-sprite.svg#litecoin"></use>
+                            </svg>
+                          </div>
+                          <div class="col">
+                            <div class="form-row__text">Ожидаемый доход</div>
+                            <div class="form-row__price">42.32<span class="form-row__price--num">150 </span><span class="form-row__price--currency">USD</span></div>
+                          </div>
+                        </div>
+                        <div class="coin-stats__list">
+                          <div class="coin-stats__scroll mCustomScrollbar">
+                            <div class="coin-stats__list-item">
+                              <div class="coin-stats__list-num">0.32<span>150</span></div>
+                              <div class="coin-stats__list-cont">
+                                <div class="coin-stats__list-progress">
+                                  <div style="width:70%"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="coin-stats__list-item coin-stats__list-item--green">
+                              <div class="coin-stats__list-num">0.31<span>150</span></div>
+                              <div class="coin-stats__list-cont">
+                                <div class="coin-stats__list-progress">
+                                  <div style="width:95%"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="coin-stats__list-item coin-stats__list-item--blue">
+                              <div class="coin-stats__list-num">0.30<span>150</span></div>
+                              <div class="coin-stats__list-cont">
+                                <div class="coin-stats__list-progress">
+                                  <div style="width:75%"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="coin-stats__list-item coin-stats__list-item--blue">
+                              <div class="coin-stats__list-num">0.29<span>150</span></div>
+                              <div class="coin-stats__list-cont">
+                                <div class="coin-stats__list-progress">
+                                  <div style="width:50%"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="coin-stats__list-item coin-stats__list-item--blue">
+                              <div class="coin-stats__list-num">0.28<span>150</span></div>
+                              <div class="coin-stats__list-cont">
+                                <div class="coin-stats__list-progress">
+                                  <div style="width:88%"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="coin-stats__list-item">
+                              <div class="coin-stats__list-num">0.27<span>150</span></div>
+                              <div class="coin-stats__list-cont">
+                                <div class="coin-stats__list-progress">
+                                  <div style="width:38%"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="coin-stats__list-item">
+                              <div class="coin-stats__list-num">0.26<span>150</span></div>
+                              <div class="coin-stats__list-cont">
+                                <div class="coin-stats__list-progress">
+                                  <div style="width:78%"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="coin-stats__list-item" style="opacity:0.2">
+                              <div class="coin-stats__list-num">0.25<span>150</span></div>
+                              <div class="coin-stats__list-cont">
+                                <div class="coin-stats__list-progress">
+                                  <div style="width:98%"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="coin-stats__list-item" style="opacity:0.2">
+                              <div class="coin-stats__list-num">0.25<span>150</span></div>
+                              <div class="coin-stats__list-cont">
+                                <div class="coin-stats__list-progress">
+                                  <div style="width:18%"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="coin-stats__list-item" style="opacity:0.2">
+                              <div class="coin-stats__list-num">0.25<span>150</span></div>
+                              <div class="coin-stats__list-cont">
+                                <div class="coin-stats__list-progress">
+                                  <div style="width:68%"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="coin-stats__list-item" style="opacity:0.2">
+                              <div class="coin-stats__list-num">0.25<span>150</span></div>
+                              <div class="coin-stats__list-cont">
+                                <div class="coin-stats__list-progress">
+                                  <div style="width:28%"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="coin-stats__icon-bg">
+                        <svg class="icon icon--litecoin">
+                          <use xlink:href="img/svg-sprite.svg#litecoin"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-block mt-8">
+                <div class="table-l">
+                  <div class="table-l__head-wrap">
+                    <div class="flex-wrap">
+                      <div class="table-l__th table-l__num">#</div>
+                      <div class="table-l__th table-l__name">Name</div>
+                      <div class="table-l__th table-l__market-cap">Market Cap</div>
+                      <div class="table-l__th table-l__price">Price</div>
+                      <div class="table-l__th table-l__volume">Volume</div>
+                      <div class="table-l__th table-l__change">Change</div>
+                      <div class="table-l__th table-l__graph">Graph</div>
+                    </div>
+                  </div>
+                  <div class="table-l__scroll mCustomScrollbar">
+                    <div class="table-l__body-wrap">
+                      <div class="flex-wrap">
+                        <div class="table-l__td table-l__num">1</div>
+                        <div class="table-l__td table-l__name">Bitcoin</div>
+                        <div class="table-l__td table-l__market-cap">$88.602,843,944</div>
+                        <div class="table-l__td table-l__price">$5,025.66</div>
+                        <div class="table-l__td table-l__volume">$21.975.858</div>
+                        <div class="table-l__td table-l__change">1.52%</div>
+                        <div class="table-l__td table-l__graph"></div>
+                      </div>
+                      <div class="flex-wrap">
+                        <div class="table-l__td table-l__num">2</div>
+                        <div class="table-l__td table-l__name">Bitcoin</div>
+                        <div class="table-l__td table-l__market-cap">$88.602,843,944</div>
+                        <div class="table-l__td table-l__price">$5,025.66</div>
+                        <div class="table-l__td table-l__volume">$21.975.858</div>
+                        <div class="table-l__td table-l__change">1.52%</div>
+                        <div class="table-l__td table-l__graph"></div>
+                      </div>
+                      <div class="flex-wrap">
+                        <div class="table-l__td table-l__num">3</div>
+                        <div class="table-l__td table-l__name">Bitcoin</div>
+                        <div class="table-l__td table-l__market-cap">$88.602,843,944</div>
+                        <div class="table-l__td table-l__price">$5,025.66</div>
+                        <div class="table-l__td table-l__volume">$21.975.858</div>
+                        <div class="table-l__td table-l__change">1.52%</div>
+                        <div class="table-l__td table-l__graph"></div>
+                      </div>
+                      <div class="flex-wrap">
+                        <div class="table-l__td table-l__num">4</div>
+                        <div class="table-l__td table-l__name">Bitcoin</div>
+                        <div class="table-l__td table-l__market-cap">$88.602,843,944</div>
+                        <div class="table-l__td table-l__price">$5,025.66</div>
+                        <div class="table-l__td table-l__volume">$21.975.858</div>
+                        <div class="table-l__td table-l__change">1.52%</div>
+                        <div class="table-l__td table-l__graph"></div>
+                      </div>
+                      <div class="flex-wrap">
+                        <div class="table-l__td table-l__num">5</div>
+                        <div class="table-l__td table-l__name">Bitcoin</div>
+                        <div class="table-l__td table-l__market-cap">$88.602,843,944</div>
+                        <div class="table-l__td table-l__price">$5,025.66</div>
+                        <div class="table-l__td table-l__volume">$21.975.858</div>
+                        <div class="table-l__td table-l__change">1.52%</div>
+                        <div class="table-l__td table-l__graph"></div>
+                      </div>
+                      <div class="flex-wrap">
+                        <div class="table-l__td table-l__num">6</div>
+                        <div class="table-l__td table-l__name">Bitcoin</div>
+                        <div class="table-l__td table-l__market-cap">$88.602,843,944</div>
+                        <div class="table-l__td table-l__price">$5,025.66</div>
+                        <div class="table-l__td table-l__volume">$21.975.858</div>
+                        <div class="table-l__td table-l__change">1.52%</div>
+                        <div class="table-l__td table-l__graph"></div>
+                      </div>
+                      <div class="flex-wrap">
+                        <div class="table-l__td table-l__num">7</div>
+                        <div class="table-l__td table-l__name">Bitcoin</div>
+                        <div class="table-l__td table-l__market-cap">$88.602,843,944</div>
+                        <div class="table-l__td table-l__price">$5,025.66</div>
+                        <div class="table-l__td table-l__volume">$21.975.858</div>
+                        <div class="table-l__td table-l__change">1.52%</div>
+                        <div class="table-l__td table-l__graph"></div>
+                      </div>
+                      <div class="flex-wrap">
+                        <div class="table-l__td table-l__num">8</div>
+                        <div class="table-l__td table-l__name">Bitcoin</div>
+                        <div class="table-l__td table-l__market-cap">$88.602,843,944</div>
+                        <div class="table-l__td table-l__price">$5,025.66</div>
+                        <div class="table-l__td table-l__volume">$21.975.858</div>
+                        <div class="table-l__td table-l__change">1.52%</div>
+                        <div class="table-l__td table-l__graph"></div>
+                      </div>
+                      <div class="flex-wrap">
+                        <div class="table-l__td table-l__num">9</div>
+                        <div class="table-l__td table-l__name">Bitcoin</div>
+                        <div class="table-l__td table-l__market-cap">$88.602,843,944</div>
+                        <div class="table-l__td table-l__price">$5,025.66</div>
+                        <div class="table-l__td table-l__volume">$21.975.858</div>
+                        <div class="table-l__td table-l__change">1.52%</div>
+                        <div class="table-l__td table-l__graph"></div>
+                      </div>
+                      <div class="flex-wrap">
+                        <div class="table-l__td table-l__num">10</div>
+                        <div class="table-l__td table-l__name">Bitcoin</div>
+                        <div class="table-l__td table-l__market-cap">$88.602,843,944</div>
+                        <div class="table-l__td table-l__price">$5,025.66</div>
+                        <div class="table-l__td table-l__volume">$21.975.858</div>
+                        <div class="table-l__td table-l__change">1.52%</div>
+                        <div class="table-l__td table-l__graph"></div>
+                      </div>
+                      <div class="flex-wrap">
+                        <div class="table-l__td table-l__num">11</div>
+                        <div class="table-l__td table-l__name">Bitcoin</div>
+                        <div class="table-l__td table-l__market-cap">$88.602,843,944</div>
+                        <div class="table-l__td table-l__price">$5,025.66</div>
+                        <div class="table-l__td table-l__volume">$21.975.858</div>
+                        <div class="table-l__td table-l__change">1.52%</div>
+                        <div class="table-l__td table-l__graph"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript" src="scripts/jquery.min.js"></script>
+      <script type="text/javascript" src="scripts/libs.min.js"></script>
+      <script type="text/javascript" src="scripts/main.js"></script>
+    </main>
+  </body>
+</html>

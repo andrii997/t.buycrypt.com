@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+    <link href="styles/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <main id="main">
+      <header class="header" id="header"> 
+        <div class="flex-wrap">
+          <div class="col-auto">
+            <h3 class="header__h3">Welcome back, Kyrill</h3>
+            <h1 class="header__h1">Thanks for being with us.</h1>
+          </div>
+          <div class="col-auto ml-auto"><a class="header__message" href="chat.html">
+              <svg class="icon icon--message">
+                <use xlink:href="img/svg-sprite.svg#message"></use>
+              </svg></a>
+            <div class="header__notifications">
+              <div class="header__notifications--badge"></div>
+              <svg class="icon icon--notifications">
+                <use xlink:href="img/svg-sprite.svg#notifications"></use>
+              </svg>
+            </div>
+            <div class="header__user"><a class="header__user-avatar" href="" style="background-image:url('img/pic-8.jpg')"></a>
+              <div class="header__user-inner">
+                <div class="header__user--name">Kirill Moneylover</div>
+                <div class="header__user--date">Member since 2019</div>
+                <div class="header__user--icon">
+                  <svg class="icon icon--arrow-down">
+                    <use xlink:href="img/svg-sprite.svg#arrow-down"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="header__user-dropdown"> 
+                <div class="header__user-dropdown--inner">
+                  <div class="header__user-list">
+                    <div class="header__user-list-item"><a class="header__user-list-link" href="">Настройки</a></div>
+                    <div class="header__user-list-item"><a class="header__user-list-link" href="">Выход</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="flex-wrap">
+        <div class="aside">
+          <div class="menu">
+            <div class="menu__item"><a class="menu__link menu__link--active" href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--chart">
+                    <use xlink:href="img/svg-sprite.svg#chart"></use>
+                  </svg>
+                </div><span class="menu__item-name">History</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--statistics">
+                    <use xlink:href="img/svg-sprite.svg#statistics"></use>
+                  </svg>
+                </div><span class="menu__item-name">Trading</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--settings">
+                    <use xlink:href="img/svg-sprite.svg#settings"></use>
+                  </svg>
+                </div><span class="menu__item-name">Tasks</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--strategy">
+                    <use xlink:href="img/svg-sprite.svg#strategy"></use>
+                  </svg>
+                </div><span class="menu__item-name">Strategies</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--support">
+                    <use xlink:href="img/svg-sprite.svg#support"></use>
+                  </svg>
+                </div><span class="menu__item-name">Support</span></a></div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="coin-list">
+            <div class="coin-list__total">Все биржы<span>3</span></div>
+            <div class="coin-list__item">
+              <svg class="icon icon--litecoin">
+                <use xlink:href="img/svg-sprite.svg#litecoin"></use>
+              </svg>
+              <div class="coin-list__item-name">Binance</div>
+              <div class="coin-list__item-text">Volumetric_treo</div>
+            </div>
+            <div class="coin-list__item">
+              <svg class="icon icon--btc">
+                <use xlink:href="img/svg-sprite.svg#btc"></use>
+              </svg>
+              <div class="coin-list__item-name">Binance</div>
+              <div class="coin-list__item-text">Test_account</div>
+            </div>
+            <div class="coin-list__item">
+              <svg class="icon icon--bch">
+                <use xlink:href="img/svg-sprite.svg#bch"></use>
+              </svg>
+              <div class="coin-list__item-name">Binance</div>
+              <div class="coin-list__item-text">Volumetric_treo</div>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion__item">
+              <div class="accordion__header">
+                <div class="accordion__header-arrow"></div>
+                <svg class="icon icon--litecoin">
+                  <use xlink:href="img/svg-sprite.svg#litecoin"></use>
+                </svg>
+                <div class="accordion__header-name">Binance</div>
+              </div>
+              <div class="accordion__dropdown">
+                <table class="table-info table-info__large table-info__blue">
+                  <tr>
+                    <th>Date</th>
+                    <th>Pair</th>
+                    <th>Type</th>
+                    <th>Side</th>
+                    <th class="text-center">Price</th>
+                    <th>Amount</th>
+                    <th>Filled %</th>
+                    <th>Total</th>
+                    <th class="text-center">Trigger Co...</th>
+                    <th>Cancel All</th>
+                  </tr>
+                  <tr class="table-info__row-active">
+                    <td>03-18 15:54</td>
+                    <td>
+                      <div class="table-info__coin">
+                        <svg class="icon icon--btc">
+                          <use xlink:href="img/svg-sprite.svg#btc"></use>
+                        </svg>WAVES/US
+                      </div>
+                    </td>
+                    <td>Limit</td>
+                    <td class="text-red">Sell</td>
+                    <td class="text-center">2.90000</td>
+                    <td>2,011.18</td>
+                    <td>0.00%</td>
+                    <td>5,823.4220 USDT</td>
+                    <td>-</td>
+                    <td>Cancel</td>
+                  </tr>
+                  <tr>
+                    <td>03-18 15:54</td>
+                    <td>
+                      <div class="table-info__coin">
+                        <svg class="icon icon--btc">
+                          <use xlink:href="img/svg-sprite.svg#btc"></use>
+                        </svg>WAVES/US
+                      </div>
+                    </td>
+                    <td>Limit</td>
+                    <td class="text-red">Sell</td>
+                    <td class="text-center">2.90000</td>
+                    <td>2,011.18</td>
+                    <td>0.00%</td>
+                    <td>5,823.4220 USDT</td>
+                    <td>-</td>
+                    <td>Cancel</td>
+                  </tr>
+                  <tr>
+                    <td>03-18 15:54</td>
+                    <td>
+                      <div class="table-info__coin">
+                        <svg class="icon icon--btc">
+                          <use xlink:href="img/svg-sprite.svg#btc"></use>
+                        </svg>WAVES/US
+                      </div>
+                    </td>
+                    <td>Limit</td>
+                    <td class="text-red">Sell</td>
+                    <td class="text-center">2.90000</td>
+                    <td>2,011.18</td>
+                    <td>0.00%</td>
+                    <td>5,823.4220 USDT</td>
+                    <td>-</td>
+                    <td>Cancel</td>
+                  </tr>
+                  <tr>
+                    <td>03-18 15:54</td>
+                    <td>
+                      <div class="table-info__coin">
+                        <svg class="icon icon--btc">
+                          <use xlink:href="img/svg-sprite.svg#btc"></use>
+                        </svg>WAVES/US
+                      </div>
+                    </td>
+                    <td>Limit</td>
+                    <td class="text-red">Sell</td>
+                    <td class="text-center">2.90000</td>
+                    <td>2,011.18</td>
+                    <td>0.00%</td>
+                    <td>5,823.4220 USDT</td>
+                    <td>-</td>
+                    <td>Cancel</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <div class="accordion__header">
+                <div class="accordion__header-arrow"></div>
+                <svg class="icon icon--btc">
+                  <use xlink:href="img/svg-sprite.svg#btc"></use>
+                </svg>
+                <div class="accordion__header-name">Binance</div>
+              </div>
+              <div class="accordion__dropdown">
+                <table class="table-info table-info__large table-info__blue">
+                  <tr>
+                    <th>Date</th>
+                    <th>Pair</th>
+                    <th>Type</th>
+                    <th>Side</th>
+                    <th class="text-center">Price</th>
+                    <th>Amount</th>
+                    <th>Filled %</th>
+                    <th>Total</th>
+                    <th class="text-center">Trigger Co...</th>
+                    <th>Cancel All</th>
+                  </tr>
+                  <tr class="table-info__row-active">
+                    <td>03-18 15:54</td>
+                    <td>
+                      <div class="table-info__coin">
+                        <svg class="icon icon--btc">
+                          <use xlink:href="img/svg-sprite.svg#btc"></use>
+                        </svg>WAVES/US
+                      </div>
+                    </td>
+                    <td>Limit</td>
+                    <td class="text-red">Sell</td>
+                    <td class="text-center">2.90000</td>
+                    <td>2,011.18</td>
+                    <td>0.00%</td>
+                    <td>5,823.4220 USDT</td>
+                    <td>-</td>
+                    <td>Cancel</td>
+                  </tr>
+                  <tr>
+                    <td>03-18 15:54</td>
+                    <td>
+                      <div class="table-info__coin">
+                        <svg class="icon icon--btc">
+                          <use xlink:href="img/svg-sprite.svg#btc"></use>
+                        </svg>WAVES/US
+                      </div>
+                    </td>
+                    <td>Limit</td>
+                    <td class="text-red">Sell</td>
+                    <td class="text-center">2.90000</td>
+                    <td>2,011.18</td>
+                    <td>0.00%</td>
+                    <td>5,823.4220 USDT</td>
+                    <td>-</td>
+                    <td>Cancel</td>
+                  </tr>
+                  <tr>
+                    <td>03-18 15:54</td>
+                    <td>
+                      <div class="table-info__coin">
+                        <svg class="icon icon--btc">
+                          <use xlink:href="img/svg-sprite.svg#btc"></use>
+                        </svg>WAVES/US
+                      </div>
+                    </td>
+                    <td>Limit</td>
+                    <td class="text-red">Sell</td>
+                    <td class="text-center">2.90000</td>
+                    <td>2,011.18</td>
+                    <td>0.00%</td>
+                    <td>5,823.4220 USDT</td>
+                    <td>-</td>
+                    <td>Cancel</td>
+                  </tr>
+                  <tr>
+                    <td>03-18 15:54</td>
+                    <td>
+                      <div class="table-info__coin">
+                        <svg class="icon icon--btc">
+                          <use xlink:href="img/svg-sprite.svg#btc"></use>
+                        </svg>WAVES/US
+                      </div>
+                    </td>
+                    <td>Limit</td>
+                    <td class="text-red">Sell</td>
+                    <td class="text-center">2.90000</td>
+                    <td>2,011.18</td>
+                    <td>0.00%</td>
+                    <td>5,823.4220 USDT</td>
+                    <td>-</td>
+                    <td>Cancel</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <div class="accordion__header">
+                <div class="accordion__header-arrow"></div>
+                <svg class="icon icon--bch">
+                  <use xlink:href="img/svg-sprite.svg#bch"></use>
+                </svg>
+                <div class="accordion__header-name">Binance</div>
+              </div>
+              <div class="accordion__dropdown">
+                <table class="table-info table-info__large table-info__blue">
+                  <tr>
+                    <th>Date</th>
+                    <th>Pair</th>
+                    <th>Type</th>
+                    <th>Side</th>
+                    <th class="text-center">Price</th>
+                    <th>Amount</th>
+                    <th>Filled %</th>
+                    <th>Total</th>
+                    <th class="text-center">Trigger Co...</th>
+                    <th>Cancel All</th>
+                  </tr>
+                  <tr class="table-info__row-active">
+                    <td>03-18 15:54</td>
+                    <td>
+                      <div class="table-info__coin">
+                        <svg class="icon icon--btc">
+                          <use xlink:href="img/svg-sprite.svg#btc"></use>
+                        </svg>WAVES/US
+                      </div>
+                    </td>
+                    <td>Limit</td>
+                    <td class="text-red">Sell</td>
+                    <td class="text-center">2.90000</td>
+                    <td>2,011.18</td>
+                    <td>0.00%</td>
+                    <td>5,823.4220 USDT</td>
+                    <td>-</td>
+                    <td>Cancel</td>
+                  </tr>
+                  <tr>
+                    <td>03-18 15:54</td>
+                    <td>
+                      <div class="table-info__coin">
+                        <svg class="icon icon--btc">
+                          <use xlink:href="img/svg-sprite.svg#btc"></use>
+                        </svg>WAVES/US
+                      </div>
+                    </td>
+                    <td>Limit</td>
+                    <td class="text-red">Sell</td>
+                    <td class="text-center">2.90000</td>
+                    <td>2,011.18</td>
+                    <td>0.00%</td>
+                    <td>5,823.4220 USDT</td>
+                    <td>-</td>
+                    <td>Cancel</td>
+                  </tr>
+                  <tr>
+                    <td>03-18 15:54</td>
+                    <td>
+                      <div class="table-info__coin">
+                        <svg class="icon icon--btc">
+                          <use xlink:href="img/svg-sprite.svg#btc"></use>
+                        </svg>WAVES/US
+                      </div>
+                    </td>
+                    <td>Limit</td>
+                    <td class="text-red">Sell</td>
+                    <td class="text-center">2.90000</td>
+                    <td>2,011.18</td>
+                    <td>0.00%</td>
+                    <td>5,823.4220 USDT</td>
+                    <td>-</td>
+                    <td>Cancel</td>
+                  </tr>
+                  <tr>
+                    <td>03-18 15:54</td>
+                    <td>
+                      <div class="table-info__coin">
+                        <svg class="icon icon--btc">
+                          <use xlink:href="img/svg-sprite.svg#btc"></use>
+                        </svg>WAVES/US
+                      </div>
+                    </td>
+                    <td>Limit</td>
+                    <td class="text-red">Sell</td>
+                    <td class="text-center">2.90000</td>
+                    <td>2,011.18</td>
+                    <td>0.00%</td>
+                    <td>5,823.4220 USDT</td>
+                    <td>-</td>
+                    <td>Cancel</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript" src="scripts/jquery.min.js"></script>
+      <script type="text/javascript" src="scripts/libs.min.js"></script>
+      <script type="text/javascript" src="scripts/main.js"></script>
+    </main>
+  </body>
+</html>

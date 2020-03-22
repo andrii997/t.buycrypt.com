@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+    <link href="styles/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <main id="main">
+      <header class="header" id="header"> 
+        <div class="flex-wrap">
+          <div class="col-auto">
+            <h3 class="header__h3">Welcome back, Kyrill</h3>
+            <h1 class="header__h1">Thanks for being with us.</h1>
+          </div>
+          <div class="col-auto ml-auto"><a class="header__message" href="chat.html">
+              <svg class="icon icon--message">
+                <use xlink:href="img/svg-sprite.svg#message"></use>
+              </svg></a>
+            <div class="header__notifications">
+              <div class="header__notifications--badge"></div>
+              <svg class="icon icon--notifications">
+                <use xlink:href="img/svg-sprite.svg#notifications"></use>
+              </svg>
+            </div>
+            <div class="header__user">
+              <div class="header__user-inner">
+                <div class="header__user--name">Kirill Moneylover</div>
+                <div class="header__user--date">Member since 2019</div>
+                <div class="header__user--icon">
+                  <svg class="icon icon--arrow-down">
+                    <use xlink:href="img/svg-sprite.svg#arrow-down"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="header__user-dropdown"> 
+                <div class="header__user-dropdown--inner">
+                  <div class="header__user-list">
+                    <div class="header__user-list-item"><a class="header__user-list-link" href="">Настройки</a></div>
+                    <div class="header__user-list-item"><a class="header__user-list-link" href="">Выход</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="flex-wrap">
+        <div class="aside">
+          <div class="menu">
+            <div class="menu__item"><a class="menu__link menu__link--active" href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--chart">
+                    <use xlink:href="img/svg-sprite.svg#chart"></use>
+                  </svg>
+                </div><span class="menu__item-name">History</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--statistics">
+                    <use xlink:href="img/svg-sprite.svg#statistics"></use>
+                  </svg>
+                </div><span class="menu__item-name">Trading</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--settings">
+                    <use xlink:href="img/svg-sprite.svg#settings"></use>
+                  </svg>
+                </div><span class="menu__item-name">Tasks</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--strategy">
+                    <use xlink:href="img/svg-sprite.svg#strategy"></use>
+                  </svg>
+                </div><span class="menu__item-name">Strategies</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--support">
+                    <use xlink:href="img/svg-sprite.svg#support"></use>
+                  </svg>
+                </div><span class="menu__item-name">Support</span></a></div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="flex-p-wrap mt-30"> 
+            <div class="col-2-3">
+              <div class="inner-block p-inner min-h-full">
+                <div class="flex-p-wrap"> 
+                  <div class="col-auto"> 
+                    <div class="form-row"> 
+                      <input class="form-row__input w-265" type="text" placeholder="Начните вводить ">
+                    </div>
+                  </div>
+                  <div class="col-auto ml-auto"> <a class="btn-r w-140 pl-0 pr-0" href="#">Только Прибильные</a><a class="btn-r w-140 ml-8" href="#">Откуп готов</a></div>
+                </div>
+                <div class="table-l table-l__no-p mt-20">
+                  <div class="table-l__head-wrap">
+                    <div class="flex-wrap">
+                      <div class="table-l__th table-l__num">#</div>
+                      <div class="table-l__th table-l__name">Name</div>
+                      <div class="table-l__th table-l__market-cap">Market Cap</div>
+                      <div class="table-l__th table-l__price">Price</div>
+                      <div class="table-l__th table-l__volume">Volume</div>
+                      <div class="table-l__th table-l__change">Change</div>
+                      <div class="table-l__th table-l__graph">Graph</div>
+                    </div>
+                  </div>
+                  <div class="table-l__scroll mCustomScrollbar">
+                    <div class="table-l__body-wrap">
+                      <div class="flex-wrap">
+                        <div class="table-l__td table-l__num">1</div>
+                        <div class="table-l__td table-l__name">Bitcoin</div>
+                        <div class="table-l__td table-l__market-cap">$88.602,843,944</div>
+                        <div class="table-l__td table-l__price">$5,025.66</div>
+                        <div class="table-l__td table-l__volume">$21.975.858</div>
+                        <div class="table-l__td table-l__change">1.52%</div>
+                        <div class="table-l__td table-l__graph"></div>
+                      </div>
+                      <div class="flex-wrap">
+                        <div class="table-l__td table-l__num">2</div>
+                        <div class="table-l__td table-l__name">Bitcoin</div>
+                        <div class="table-l__td table-l__market-cap">$88.602,843,944</div>
+                        <div class="table-l__td table-l__price">$5,025.66</div>
+                        <div class="table-l__td table-l__volume">$21.975.858</div>
+                        <div class="table-l__td table-l__change">1.52%</div>
+                        <div class="table-l__td table-l__graph"></div>
+                      </div>
+                      <div class="flex-wrap">
+                        <div class="table-l__td table-l__num">3</div>
+                        <div class="table-l__td table-l__name">Bitcoin</div>
+                        <div class="table-l__td table-l__market-cap">$88.602,843,944</div>
+                        <div class="table-l__td table-l__price">$5,025.66</div>
+                        <div class="table-l__td table-l__volume">$21.975.858</div>
+                        <div class="table-l__td table-l__change">1.52%</div>
+                        <div class="table-l__td table-l__graph"></div>
+                      </div>
+                      <div class="flex-wrap">
+                        <div class="table-l__td table-l__num">4</div>
+                        <div class="table-l__td table-l__name">Bitcoin</div>
+                        <div class="table-l__td table-l__market-cap">$88.602,843,944</div>
+                        <div class="table-l__td table-l__price">$5,025.66</div>
+                        <div class="table-l__td table-l__volume">$21.975.858</div>
+                        <div class="table-l__td table-l__change">1.52%</div>
+                        <div class="table-l__td table-l__graph"></div>
+                      </div>
+                      <div class="flex-wrap">
+                        <div class="table-l__td table-l__num">5</div>
+                        <div class="table-l__td table-l__name">Bitcoin</div>
+                        <div class="table-l__td table-l__market-cap">$88.602,843,944</div>
+                        <div class="table-l__td table-l__price">$5,025.66</div>
+                        <div class="table-l__td table-l__volume">$21.975.858</div>
+                        <div class="table-l__td table-l__change">1.52%</div>
+                        <div class="table-l__td table-l__graph"></div>
+                      </div>
+                      <div class="flex-wrap">
+                        <div class="table-l__td table-l__num">6</div>
+                        <div class="table-l__td table-l__name">Bitcoin</div>
+                        <div class="table-l__td table-l__market-cap">$88.602,843,944</div>
+                        <div class="table-l__td table-l__price">$5,025.66</div>
+                        <div class="table-l__td table-l__volume">$21.975.858</div>
+                        <div class="table-l__td table-l__change">1.52%</div>
+                        <div class="table-l__td table-l__graph"></div>
+                      </div>
+                      <div class="flex-wrap">
+                        <div class="table-l__td table-l__num">7</div>
+                        <div class="table-l__td table-l__name">Bitcoin</div>
+                        <div class="table-l__td table-l__market-cap">$88.602,843,944</div>
+                        <div class="table-l__td table-l__price">$5,025.66</div>
+                        <div class="table-l__td table-l__volume">$21.975.858</div>
+                        <div class="table-l__td table-l__change">1.52%</div>
+                        <div class="table-l__td table-l__graph"></div>
+                      </div>
+                      <div class="flex-wrap">
+                        <div class="table-l__td table-l__num">8</div>
+                        <div class="table-l__td table-l__name">Bitcoin</div>
+                        <div class="table-l__td table-l__market-cap">$88.602,843,944</div>
+                        <div class="table-l__td table-l__price">$5,025.66</div>
+                        <div class="table-l__td table-l__volume">$21.975.858</div>
+                        <div class="table-l__td table-l__change">1.52%</div>
+                        <div class="table-l__td table-l__graph"></div>
+                      </div>
+                      <div class="flex-wrap">
+                        <div class="table-l__td table-l__num">9</div>
+                        <div class="table-l__td table-l__name">Bitcoin</div>
+                        <div class="table-l__td table-l__market-cap">$88.602,843,944</div>
+                        <div class="table-l__td table-l__price">$5,025.66</div>
+                        <div class="table-l__td table-l__volume">$21.975.858</div>
+                        <div class="table-l__td table-l__change">1.52%</div>
+                        <div class="table-l__td table-l__graph"></div>
+                      </div>
+                      <div class="flex-wrap">
+                        <div class="table-l__td table-l__num">10</div>
+                        <div class="table-l__td table-l__name">Bitcoin</div>
+                        <div class="table-l__td table-l__market-cap">$88.602,843,944</div>
+                        <div class="table-l__td table-l__price">$5,025.66</div>
+                        <div class="table-l__td table-l__volume">$21.975.858</div>
+                        <div class="table-l__td table-l__change">1.52%</div>
+                        <div class="table-l__td table-l__graph"></div>
+                      </div>
+                      <div class="flex-wrap">
+                        <div class="table-l__td table-l__num">11</div>
+                        <div class="table-l__td table-l__name">Bitcoin</div>
+                        <div class="table-l__td table-l__market-cap">$88.602,843,944</div>
+                        <div class="table-l__td table-l__price">$5,025.66</div>
+                        <div class="table-l__td table-l__volume">$21.975.858</div>
+                        <div class="table-l__td table-l__change">1.52%</div>
+                        <div class="table-l__td table-l__graph"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-1-3">
+              <div class="inner-block">
+                <div class="check-list">
+                  <div class="check-list__top">
+                    <div class="flex-p-wrap">
+                      <div class="col-auto"> 
+                        <div class="check-list__title">Выбрано: <span>75</span></div>
+                      </div>
+                      <div class="col-auto ml-auto"> <a class="check-list__link" href="">Очистить список </a></div>
+                    </div>
+                  </div>
+                  <div class="check-list__scroll mCustomScrollbar">
+                    <div class="check-list__list">
+                      <div class="flex-p-wrap">
+                        <div class="col-1-4">
+                          <div class="coin-price">
+                            <div class="coin-price__name">
+                              <svg class="coin-price__icon icon icon--btc">
+                                <use xlink:href="img/svg-sprite.svg#btc"></use>
+                              </svg><span>BTC</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1-4">
+                          <div class="coin-price">
+                            <div class="coin-price__name">
+                              <svg class="coin-price__icon icon icon--bch">
+                                <use xlink:href="img/svg-sprite.svg#bch"></use>
+                              </svg><span>BCH</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1-4">
+                          <div class="coin-price">
+                            <div class="coin-price__name">
+                              <svg class="coin-price__icon icon icon--binance">
+                                <use xlink:href="img/svg-sprite.svg#binance"></use>
+                              </svg><span>BIN</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1-4">
+                          <div class="coin-price">
+                            <div class="coin-price__name">
+                              <svg class="coin-price__icon icon icon--litecoin">
+                                <use xlink:href="img/svg-sprite.svg#litecoin"></use>
+                              </svg><span>LITE</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1-4">
+                          <div class="coin-price">
+                            <div class="coin-price__name">
+                              <svg class="coin-price__icon icon icon--btc">
+                                <use xlink:href="img/svg-sprite.svg#btc"></use>
+                              </svg><span>BTC</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1-4">
+                          <div class="coin-price">
+                            <div class="coin-price__name">
+                              <svg class="coin-price__icon icon icon--bch">
+                                <use xlink:href="img/svg-sprite.svg#bch"></use>
+                              </svg><span>BCH</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1-4">
+                          <div class="coin-price">
+                            <div class="coin-price__name">
+                              <svg class="coin-price__icon icon icon--binance">
+                                <use xlink:href="img/svg-sprite.svg#binance"></use>
+                              </svg><span>BIN</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1-4">
+                          <div class="coin-price">
+                            <div class="coin-price__name">
+                              <svg class="coin-price__icon icon icon--litecoin">
+                                <use xlink:href="img/svg-sprite.svg#litecoin"></use>
+                              </svg><span>LITE</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1-4">
+                          <div class="coin-price">
+                            <div class="coin-price__name">
+                              <svg class="coin-price__icon icon icon--btc">
+                                <use xlink:href="img/svg-sprite.svg#btc"></use>
+                              </svg><span>BTC</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1-4">
+                          <div class="coin-price">
+                            <div class="coin-price__name">
+                              <svg class="coin-price__icon icon icon--bch">
+                                <use xlink:href="img/svg-sprite.svg#bch"></use>
+                              </svg><span>BCH</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1-4">
+                          <div class="coin-price">
+                            <div class="coin-price__name">
+                              <svg class="coin-price__icon icon icon--binance">
+                                <use xlink:href="img/svg-sprite.svg#binance"></use>
+                              </svg><span>BIN</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1-4">
+                          <div class="coin-price">
+                            <div class="coin-price__name">
+                              <svg class="coin-price__icon icon icon--litecoin">
+                                <use xlink:href="img/svg-sprite.svg#litecoin"></use>
+                              </svg><span>LITE</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1-4">
+                          <div class="coin-price">
+                            <div class="coin-price__name">
+                              <svg class="coin-price__icon icon icon--btc">
+                                <use xlink:href="img/svg-sprite.svg#btc"></use>
+                              </svg><span>BTC</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1-4">
+                          <div class="coin-price">
+                            <div class="coin-price__name">
+                              <svg class="coin-price__icon icon icon--bch">
+                                <use xlink:href="img/svg-sprite.svg#bch"></use>
+                              </svg><span>BCH</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1-4">
+                          <div class="coin-price">
+                            <div class="coin-price__name">
+                              <svg class="coin-price__icon icon icon--binance">
+                                <use xlink:href="img/svg-sprite.svg#binance"></use>
+                              </svg><span>BIN</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1-4">
+                          <div class="coin-price">
+                            <div class="coin-price__name">
+                              <svg class="coin-price__icon icon icon--litecoin">
+                                <use xlink:href="img/svg-sprite.svg#litecoin"></use>
+                              </svg><span>LITE</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1-4">
+                          <div class="coin-price">
+                            <div class="coin-price__name">
+                              <svg class="coin-price__icon icon icon--btc">
+                                <use xlink:href="img/svg-sprite.svg#btc"></use>
+                              </svg><span>BTC</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1-4">
+                          <div class="coin-price">
+                            <div class="coin-price__name">
+                              <svg class="coin-price__icon icon icon--bch">
+                                <use xlink:href="img/svg-sprite.svg#bch"></use>
+                              </svg><span>BCH</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1-4">
+                          <div class="coin-price">
+                            <div class="coin-price__name">
+                              <svg class="coin-price__icon icon icon--binance">
+                                <use xlink:href="img/svg-sprite.svg#binance"></use>
+                              </svg><span>BIN</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1-4">
+                          <div class="coin-price">
+                            <div class="coin-price__name">
+                              <svg class="coin-price__icon icon icon--litecoin">
+                                <use xlink:href="img/svg-sprite.svg#litecoin"></use>
+                              </svg><span>LITE</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1-4">
+                          <div class="coin-price">
+                            <div class="coin-price__name">
+                              <svg class="coin-price__icon icon icon--btc">
+                                <use xlink:href="img/svg-sprite.svg#btc"></use>
+                              </svg><span>BTC</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1-4">
+                          <div class="coin-price">
+                            <div class="coin-price__name">
+                              <svg class="coin-price__icon icon icon--bch">
+                                <use xlink:href="img/svg-sprite.svg#bch"></use>
+                              </svg><span>BCH</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1-4">
+                          <div class="coin-price">
+                            <div class="coin-price__name">
+                              <svg class="coin-price__icon icon icon--binance">
+                                <use xlink:href="img/svg-sprite.svg#binance"></use>
+                              </svg><span>BIN</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1-4">
+                          <div class="coin-price">
+                            <div class="coin-price__name">
+                              <svg class="coin-price__icon icon icon--litecoin">
+                                <use xlink:href="img/svg-sprite.svg#litecoin"></use>
+                              </svg><span>LITE</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1-4">
+                          <div class="coin-price">
+                            <div class="coin-price__name">
+                              <svg class="coin-price__icon icon icon--btc">
+                                <use xlink:href="img/svg-sprite.svg#btc"></use>
+                              </svg><span>BTC</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1-4">
+                          <div class="coin-price">
+                            <div class="coin-price__name">
+                              <svg class="coin-price__icon icon icon--bch">
+                                <use xlink:href="img/svg-sprite.svg#bch"></use>
+                              </svg><span>BCH</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1-4">
+                          <div class="coin-price">
+                            <div class="coin-price__name">
+                              <svg class="coin-price__icon icon icon--binance">
+                                <use xlink:href="img/svg-sprite.svg#binance"></use>
+                              </svg><span>BIN</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1-4">
+                          <div class="coin-price">
+                            <div class="coin-price__name">
+                              <svg class="coin-price__icon icon icon--litecoin">
+                                <use xlink:href="img/svg-sprite.svg#litecoin"></use>
+                              </svg><span>LITE</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1-4">
+                          <div class="coin-price">
+                            <div class="coin-price__name">
+                              <svg class="coin-price__icon icon icon--btc">
+                                <use xlink:href="img/svg-sprite.svg#btc"></use>
+                              </svg><span>BTC</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1-4">
+                          <div class="coin-price">
+                            <div class="coin-price__name">
+                              <svg class="coin-price__icon icon icon--bch">
+                                <use xlink:href="img/svg-sprite.svg#bch"></use>
+                              </svg><span>BCH</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1-4">
+                          <div class="coin-price">
+                            <div class="coin-price__name">
+                              <svg class="coin-price__icon icon icon--binance">
+                                <use xlink:href="img/svg-sprite.svg#binance"></use>
+                              </svg><span>BIN</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1-4">
+                          <div class="coin-price">
+                            <div class="coin-price__name">
+                              <svg class="coin-price__icon icon icon--litecoin">
+                                <use xlink:href="img/svg-sprite.svg#litecoin"></use>
+                              </svg><span>LITE</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-cont">
+                  <div class="flex-p-wrap">
+                    <div class="col-1-2">
+                      <div class="form-row"> 
+                        <label class="form-row__label">5 min</label>
+                        <div class="spinner flex-wrap">
+                          <div class="col-auto mr-auto"><a class="spinner__btn spinner__btn--minus" href=""></a></div>
+                          <div class="col"> 
+                            <div class="spinner__cont">
+                              <input class="spinner__input" type="text" value="3%">
+                            </div>
+                          </div>
+                          <div class="col-auto"><a class="spinner__btn spinner__btn--pluse" href=""></a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-1-2">
+                      <div class="form-row"> 
+                        <label class="form-row__label">5 min</label>
+                        <div class="spinner flex-wrap">
+                          <div class="col-auto mr-auto"><a class="spinner__btn spinner__btn--minus" href=""></a></div>
+                          <div class="col"> 
+                            <div class="spinner__cont">
+                              <input class="spinner__input" type="text" value="3%">
+                            </div>
+                          </div>
+                          <div class="col-auto"><a class="spinner__btn spinner__btn--pluse" href=""></a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-1-2">
+                      <div class="form-row"> 
+                        <label class="form-row__label">5 min</label>
+                        <div class="spinner flex-wrap">
+                          <div class="col-auto mr-auto"><a class="spinner__btn spinner__btn--minus" href=""></a></div>
+                          <div class="col"> 
+                            <div class="spinner__cont">
+                              <input class="spinner__input" type="text" value="3%">
+                            </div>
+                          </div>
+                          <div class="col-auto"><a class="spinner__btn spinner__btn--pluse" href=""></a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-1-2">
+                      <div class="form-row"> 
+                        <label class="form-row__label">5 min</label>
+                        <div class="spinner flex-wrap">
+                          <div class="col-auto mr-auto"><a class="spinner__btn spinner__btn--minus" href=""></a></div>
+                          <div class="col"> 
+                            <div class="spinner__cont">
+                              <input class="spinner__input" type="text" value="3%">
+                            </div>
+                          </div>
+                          <div class="col-auto"><a class="spinner__btn spinner__btn--pluse" href=""></a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-1-2">
+                      <div class="form-row"> 
+                        <label class="form-row__label">5 min</label>
+                        <div class="spinner flex-wrap">
+                          <div class="col-auto mr-auto"><a class="spinner__btn spinner__btn--minus" href=""></a></div>
+                          <div class="col"> 
+                            <div class="spinner__cont">
+                              <input class="spinner__input" type="text" value="3%">
+                            </div>
+                          </div>
+                          <div class="col-auto"><a class="spinner__btn spinner__btn--pluse" href=""></a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-1-2">
+                      <div class="form-row"> 
+                        <label class="form-row__label">5 min</label>
+                        <div class="spinner flex-wrap">
+                          <div class="col-auto mr-auto"><a class="spinner__btn spinner__btn--minus" href=""></a></div>
+                          <div class="col"> 
+                            <div class="spinner__cont">
+                              <input class="spinner__input" type="text" value="3%">
+                            </div>
+                          </div>
+                          <div class="col-auto"><a class="spinner__btn spinner__btn--pluse" href=""></a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-1">
+                      <div class="form-row mt-8"><a class="btn btn__blue-2 btn__full btn__mega" href="">Submit</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript" src="scripts/jquery.min.js"></script>
+      <script type="text/javascript" src="scripts/libs.min.js"></script>
+      <script type="text/javascript" src="scripts/main.js"></script>
+    </main>
+  </body>
+</html>

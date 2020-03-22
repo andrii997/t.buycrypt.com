@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Coin status</title>
+    <link href="styles/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <main id="main">
+      <header class="header" id="header"> 
+        <div class="flex-wrap">
+          <div class="col-auto">
+            <h3 class="header__h3">Welcome back, Kyrill</h3>
+            <h1 class="header__h1">Thanks for being with us.</h1>
+          </div>
+          <div class="col-auto ml-auto"><a class="header__message" href="chat.html">
+              <svg class="icon icon--message">
+                <use xlink:href="img/svg-sprite.svg#message"></use>
+              </svg></a>
+            <div class="header__notifications">
+              <div class="header__notifications--badge"></div>
+              <svg class="icon icon--notifications">
+                <use xlink:href="img/svg-sprite.svg#notifications"></use>
+              </svg>
+            </div>
+            <div class="header__user"><a class="header__user-avatar" href="" style="background-image:url('img/pic-8.jpg')"></a>
+              <div class="header__user-inner">
+                <div class="header__user--name">Kirill Moneylover</div>
+                <div class="header__user--date">Member since 2019</div>
+                <div class="header__user--icon">
+                  <svg class="icon icon--arrow-down">
+                    <use xlink:href="img/svg-sprite.svg#arrow-down"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="header__user-dropdown"> 
+                <div class="header__user-dropdown--inner">
+                  <div class="header__user-list">
+                    <div class="header__user-list-item"><a class="header__user-list-link" href="">Настройки</a></div>
+                    <div class="header__user-list-item"><a class="header__user-list-link" href="">Выход</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="flex-wrap">
+        <div class="aside">
+          <div class="menu">
+            <div class="menu__item"><a class="menu__link menu__link--active" href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--chart">
+                    <use xlink:href="img/svg-sprite.svg#chart"></use>
+                  </svg>
+                </div><span class="menu__item-name">History</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--statistics">
+                    <use xlink:href="img/svg-sprite.svg#statistics"></use>
+                  </svg>
+                </div><span class="menu__item-name">Trading</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--settings">
+                    <use xlink:href="img/svg-sprite.svg#settings"></use>
+                  </svg>
+                </div><span class="menu__item-name">Tasks</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--strategy">
+                    <use xlink:href="img/svg-sprite.svg#strategy"></use>
+                  </svg>
+                </div><span class="menu__item-name">Strategies</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--support">
+                    <use xlink:href="img/svg-sprite.svg#support"></use>
+                  </svg>
+                </div><span class="menu__item-name">Support</span></a></div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="coin-info">
+            <div class="flex-p-wrap coin-info__header">
+              <div class="col-auto"> 
+                <div class="coin-info__select"> 
+                  <label class="form-row__label">Как выглядит</label>
+                  <select class="select-icon">
+                    <option data-icon="binance">Binance</option>
+                    <option data-icon="litecoin">Litecoin</option>
+                    <option data-icon="binance">Binance 3</option>
+                  </select>
+                </div>
+                <div class="coin-info__regarding"> 
+                  <div class="coin-info__regarding-label">относительно</div>
+                  <div class="coin-info__regarding-row">
+                    <div class="flex-wrap">
+                      <div class="coin-price coin-price--active">
+                        <div class="coin-price__name">
+                          <svg class="coin-price__icon icon icon--btc">
+                            <use xlink:href="img/svg-sprite.svg#btc"></use>
+                          </svg><span>BTC</span>
+                        </div>
+                      </div>
+                      <div class="coin-price">
+                        <div class="coin-price__name">
+                          <svg class="coin-price__icon icon icon--btc">
+                            <use xlink:href="img/svg-sprite.svg#btc"></use>
+                          </svg><span>BTC</span>
+                        </div>
+                      </div>
+                      <div class="coin-price">
+                        <div class="coin-price__name">
+                          <svg class="coin-price__icon icon icon--btc">
+                            <use xlink:href="img/svg-sprite.svg#btc"></use>
+                          </svg><span>BTC</span>
+                        </div>
+                      </div>
+                      <div class="coin-price">
+                        <div class="coin-price__name">
+                          <svg class="coin-price__icon icon icon--bch">
+                            <use xlink:href="img/svg-sprite.svg#bch"></use>
+                          </svg><span>BCH</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto ml-auto"> 
+                <div class="coin-info__title">ADA<span>/BTC</span></div>
+                <div class="form-row__price text-right">0.32<span class="form-row__price--num">150 </span><span class="form-row__price--currency">BTC</span></div>
+              </div>
+            </div>
+            <div class="inner-block p-inner">
+              <div class="category-title">
+                <div class="category-title__icon">
+                  <svg class="icon icon--statistics-2">
+                    <use xlink:href="img/svg-sprite.svg#statistics-2"></use>
+                  </svg>
+                </div>Your Score <span>Overall</span>
+              </div>
+              <div class="flex-p-wrap coin-info__charts"> 
+                <div class="col-1-6">
+                  <div class="coin-info__chart">
+                    <div class="coin-info__chart-title">1 min</div>
+                    <div class="coin-info__c-list">
+                      <div class="coin-info__c-list-item coin-info__c-list-item--red">Sell</div>
+                      <div class="coin-info__c-list-item coin-info__c-list-item--violet">Buy</div>
+                    </div>
+                    <div class="coin-info__chart-inner">
+                      <div class="coin-info__chart-percent">55.1%</div>
+                      <svg class="circle-chart" width="100%" height="100%" viewbox="0 0 42 42" data-val="55">
+                        <circle class="circle-chart__hole" cx="21" cy="21" r="16" fill="#2d3f5d"></circle>
+                        <circle class="circle-chart__main" cx="21" cy="21" r="16" fill="transparent" stroke="#ff9e8e" stroke-width="2.5" stroke-dasharray="100" stroke-dashoffset="0" stroke-linecap="butt"></circle>
+                        <circle class="circle-chart__main-l" cx="21" cy="21" r="16" fill="transparent" stroke="#7e6aff" stroke-width="2.5" stroke-dasharray="100" stroke-dashoffset="0" stroke-linecap="butt"></circle>
+                        <circle class="circle-chart__sub" cx="21" cy="21" r="20" fill="transparent" stroke="#ff9e8e" stroke-width="0.3" stroke-dasharray="128" stroke-dashoffset="0"></circle>
+                        <circle class="circle-chart__sub-l" cx="21" cy="21" r="20" fill="transparent" stroke="#7e6aff" stroke-width="0.3" stroke-dasharray="128" stroke-dashoffset="0"></circle>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1-6">
+                  <div class="coin-info__chart">
+                    <div class="coin-info__chart-title">1 min</div>
+                    <div class="coin-info__c-list">
+                      <div class="coin-info__c-list-item coin-info__c-list-item--red">Sell</div>
+                      <div class="coin-info__c-list-item coin-info__c-list-item--violet">Buy</div>
+                    </div>
+                    <div class="coin-info__chart-inner">
+                      <div class="coin-info__chart-percent">55.1%</div>
+                      <svg class="circle-chart" width="100%" height="100%" viewbox="0 0 42 42" data-val="55">
+                        <circle class="circle-chart__hole" cx="21" cy="21" r="16" fill="#2d3f5d"></circle>
+                        <circle class="circle-chart__main" cx="21" cy="21" r="16" fill="transparent" stroke="#ff9e8e" stroke-width="2.5" stroke-dasharray="100" stroke-dashoffset="0" stroke-linecap="butt"></circle>
+                        <circle class="circle-chart__main-l" cx="21" cy="21" r="16" fill="transparent" stroke="#7e6aff" stroke-width="2.5" stroke-dasharray="100" stroke-dashoffset="0" stroke-linecap="butt"></circle>
+                        <circle class="circle-chart__sub" cx="21" cy="21" r="20" fill="transparent" stroke="#ff9e8e" stroke-width="0.3" stroke-dasharray="128" stroke-dashoffset="0"></circle>
+                        <circle class="circle-chart__sub-l" cx="21" cy="21" r="20" fill="transparent" stroke="#7e6aff" stroke-width="0.3" stroke-dasharray="128" stroke-dashoffset="0"></circle>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1-6">
+                  <div class="coin-info__chart">
+                    <div class="coin-info__chart-title">1 min</div>
+                    <div class="coin-info__c-list">
+                      <div class="coin-info__c-list-item coin-info__c-list-item--red">Sell</div>
+                      <div class="coin-info__c-list-item coin-info__c-list-item--violet">Buy</div>
+                    </div>
+                    <div class="coin-info__chart-inner">
+                      <div class="coin-info__chart-percent">55.1%</div>
+                      <svg class="circle-chart" width="100%" height="100%" viewbox="0 0 42 42" data-val="55">
+                        <circle class="circle-chart__hole" cx="21" cy="21" r="16" fill="#2d3f5d"></circle>
+                        <circle class="circle-chart__main" cx="21" cy="21" r="16" fill="transparent" stroke="#ff9e8e" stroke-width="2.5" stroke-dasharray="100" stroke-dashoffset="0" stroke-linecap="butt"></circle>
+                        <circle class="circle-chart__main-l" cx="21" cy="21" r="16" fill="transparent" stroke="#7e6aff" stroke-width="2.5" stroke-dasharray="100" stroke-dashoffset="0" stroke-linecap="butt"></circle>
+                        <circle class="circle-chart__sub" cx="21" cy="21" r="20" fill="transparent" stroke="#ff9e8e" stroke-width="0.3" stroke-dasharray="128" stroke-dashoffset="0"></circle>
+                        <circle class="circle-chart__sub-l" cx="21" cy="21" r="20" fill="transparent" stroke="#7e6aff" stroke-width="0.3" stroke-dasharray="128" stroke-dashoffset="0"></circle>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1-6">
+                  <div class="coin-info__chart">
+                    <div class="coin-info__chart-title">1 min</div>
+                    <div class="coin-info__c-list">
+                      <div class="coin-info__c-list-item coin-info__c-list-item--red">Sell</div>
+                      <div class="coin-info__c-list-item coin-info__c-list-item--violet">Buy</div>
+                    </div>
+                    <div class="coin-info__chart-inner">
+                      <div class="coin-info__chart-percent">55.1%</div>
+                      <svg class="circle-chart" width="100%" height="100%" viewbox="0 0 42 42" data-val="55">
+                        <circle class="circle-chart__hole" cx="21" cy="21" r="16" fill="#2d3f5d"></circle>
+                        <circle class="circle-chart__main" cx="21" cy="21" r="16" fill="transparent" stroke="#ff9e8e" stroke-width="2.5" stroke-dasharray="100" stroke-dashoffset="0" stroke-linecap="butt"></circle>
+                        <circle class="circle-chart__main-l" cx="21" cy="21" r="16" fill="transparent" stroke="#7e6aff" stroke-width="2.5" stroke-dasharray="100" stroke-dashoffset="0" stroke-linecap="butt"></circle>
+                        <circle class="circle-chart__sub" cx="21" cy="21" r="20" fill="transparent" stroke="#ff9e8e" stroke-width="0.3" stroke-dasharray="128" stroke-dashoffset="0"></circle>
+                        <circle class="circle-chart__sub-l" cx="21" cy="21" r="20" fill="transparent" stroke="#7e6aff" stroke-width="0.3" stroke-dasharray="128" stroke-dashoffset="0"></circle>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1-6">
+                  <div class="coin-info__chart">
+                    <div class="coin-info__chart-title">1 min</div>
+                    <div class="coin-info__c-list">
+                      <div class="coin-info__c-list-item coin-info__c-list-item--red">Sell</div>
+                      <div class="coin-info__c-list-item coin-info__c-list-item--violet">Buy</div>
+                    </div>
+                    <div class="coin-info__chart-inner">
+                      <div class="coin-info__chart-percent">55.1%</div>
+                      <svg class="circle-chart" width="100%" height="100%" viewbox="0 0 42 42" data-val="55">
+                        <circle class="circle-chart__hole" cx="21" cy="21" r="16" fill="#2d3f5d"></circle>
+                        <circle class="circle-chart__main" cx="21" cy="21" r="16" fill="transparent" stroke="#ff9e8e" stroke-width="2.5" stroke-dasharray="100" stroke-dashoffset="0" stroke-linecap="butt"></circle>
+                        <circle class="circle-chart__main-l" cx="21" cy="21" r="16" fill="transparent" stroke="#7e6aff" stroke-width="2.5" stroke-dasharray="100" stroke-dashoffset="0" stroke-linecap="butt"></circle>
+                        <circle class="circle-chart__sub" cx="21" cy="21" r="20" fill="transparent" stroke="#ff9e8e" stroke-width="0.3" stroke-dasharray="128" stroke-dashoffset="0"></circle>
+                        <circle class="circle-chart__sub-l" cx="21" cy="21" r="20" fill="transparent" stroke="#7e6aff" stroke-width="0.3" stroke-dasharray="128" stroke-dashoffset="0"></circle>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1-6">
+                  <div class="coin-info__chart">
+                    <div class="coin-info__chart-title">1 min</div>
+                    <div class="coin-info__c-list">
+                      <div class="coin-info__c-list-item coin-info__c-list-item--red">Sell</div>
+                      <div class="coin-info__c-list-item coin-info__c-list-item--violet">Buy</div>
+                    </div>
+                    <div class="coin-info__chart-inner">
+                      <div class="coin-info__chart-percent">55.1%</div>
+                      <svg class="circle-chart" width="100%" height="100%" viewbox="0 0 42 42" data-val="55">
+                        <circle class="circle-chart__hole" cx="21" cy="21" r="16" fill="#2d3f5d"></circle>
+                        <circle class="circle-chart__main" cx="21" cy="21" r="16" fill="transparent" stroke="#ff9e8e" stroke-width="2.5" stroke-dasharray="100" stroke-dashoffset="0" stroke-linecap="butt"></circle>
+                        <circle class="circle-chart__main-l" cx="21" cy="21" r="16" fill="transparent" stroke="#7e6aff" stroke-width="2.5" stroke-dasharray="100" stroke-dashoffset="0" stroke-linecap="butt"></circle>
+                        <circle class="circle-chart__sub" cx="21" cy="21" r="20" fill="transparent" stroke="#ff9e8e" stroke-width="0.3" stroke-dasharray="128" stroke-dashoffset="0"></circle>
+                        <circle class="circle-chart__sub-l" cx="21" cy="21" r="20" fill="transparent" stroke="#7e6aff" stroke-width="0.3" stroke-dasharray="128" stroke-dashoffset="0"></circle>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-p-wrap mt-8">
+              <div class="col-1-2 coin-info__chart-col">
+                <div class="coin-info__chart-cont p-inner">
+                  <div class="category-title"> 
+                    <div class="category-title__icon">
+                      <svg class="icon icon--chart">
+                        <use xlink:href="img/svg-sprite.svg#chart"></use>
+                      </svg>
+                    </div>Last Checked   <span>Users</span>
+                  </div>
+                  <div class="coin-info__chart-line" id="container"></div>
+                </div>
+              </div>
+              <div class="col-1-2 coin-info__chart-col">
+                <div class="coin-info__chart-cont p-inner">
+                  <div class="category-title"> 
+                    <div class="category-title__icon">
+                      <svg class="icon icon--chart">
+                        <use xlink:href="img/svg-sprite.svg#chart"></use>
+                      </svg>
+                    </div>Last Checked   <span>Users</span>
+                  </div>
+                  <div class="coin-info__chart-line" id="container-2"></div>
+                </div>
+              </div>
+              <div class="col-1-2 coin-info__chart-col">
+                <div class="coin-info__chart-cont p-inner">
+                  <div class="category-title"> 
+                    <div class="category-title__icon">
+                      <svg class="icon icon--chart">
+                        <use xlink:href="img/svg-sprite.svg#chart"></use>
+                      </svg>
+                    </div>Last Checked   <span>Users</span>
+                  </div>
+                  <div class="coin-info__chart-line" id="container-3"></div>
+                </div>
+              </div>
+              <div class="col-1-2 coin-info__chart-col">
+                <div class="coin-info__chart-cont p-inner">
+                  <div class="category-title"> 
+                    <div class="category-title__icon">
+                      <svg class="icon icon--chart">
+                        <use xlink:href="img/svg-sprite.svg#chart"></use>
+                      </svg>
+                    </div>Last Checked   <span>Users</span>
+                  </div>
+                  <div class="coin-info__chart-line" id="container-4"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="https://code.highcharts.com/highcharts.js"></script>
+      <script src="https://code.highcharts.com/modules/series-label.js"></script>
+      <script src="https://code.highcharts.com/modules/exporting.js"></script>
+      <script src="https://code.highcharts.com/modules/export-data.js"></script>
+      <script src="https://code.highcharts.com/themes/dark-unica.js"></script>
+      <script>
+        Highcharts.chart('container', {
+          chart: {
+              type: 'spline',
+              scrollablePlotArea: {
+                  minWidth: 500,
+                  scrollPositionX: 1
+              }
+          },
+        
+          xAxis: {
+              type: 'datetime',
+              labels: {
+                  overflow: 'justify'
+              }
+          },
+          yAxis: {
+              title: {
+                  text: 'Wind speed (m/s)'
+              },
+              minorGridLineWidth: 0,
+              gridLineWidth: 0,
+              alternateGridColor: null,
+              plotBands: [{ // Light air
+                  from: 0.3,
+                  to: 1.5,
+                  color: 'rgba(68, 170, 213, 0.1)',
+                  label: {
+                      text: 'Light air',
+                      style: {
+                          color: '#606060'
+                      }
+                  }
+              }, { // Light breeze
+                  from: 1.5,
+                  to: 3.3,
+                  color: 'rgba(0, 0, 0, 0)',
+                  label: {
+                      text: 'Light breeze',
+                      style: {
+                          color: '#606060'
+                      }
+                  }
+              }, { // Gentle breeze
+                  from: 3.3,
+                  to: 5.5,
+                  color: 'rgba(68, 170, 213, 0.1)',
+                  label: {
+                      text: 'Gentle breeze',
+                      style: {
+                          color: '#606060'
+                      }
+                  }
+              }, { // Moderate breeze
+                  from: 5.5,
+                  to: 8,
+                  color: 'rgba(0, 0, 0, 0)',
+                  label: {
+                      text: 'Moderate breeze',
+                      style: {
+                          color: '#606060'
+                      }
+                  }
+              }, { // Fresh breeze
+                  from: 8,
+                  to: 11,
+                  color: 'rgba(68, 170, 213, 0.1)',
+                  label: {
+                      text: 'Fresh breeze',
+                      style: {
+                          color: '#606060'
+                      }
+                  }
+              }, { // Strong breeze
+                  from: 11,
+                  to: 14,
+                  color: 'rgba(0, 0, 0, 0)',
+                  label: {
+                      text: 'Strong breeze',
+                      style: {
+                          color: '#606060'
+                      }
+                  }
+              }, { // High wind
+                  from: 14,
+                  to: 15,
+                  color: 'rgba(68, 170, 213, 0.1)',
+                  label: {
+                      text: 'High wind',
+                      style: {
+                          color: '#606060'
+                      }
+                  }
+              }]
+          },
+          tooltip: {
+              valueSuffix: ' m/s'
+          },
+          plotOptions: {
+              spline: {
+                  lineWidth: 4,
+                  states: {
+                      hover: {
+                          lineWidth: 5
+                      }
+                  },
+                  marker: {
+                      enabled: false
+                  },
+                  pointInterval: 3600000, // one hour
+                  pointStart: Date.UTC(2018, 1, 13, 0, 0, 0)
+              }
+          },
+          series: [{
+              name: 'Hestavollane',
+              data: [
+                  3.7, 3.3, 3.9, 5.1, 3.5, 3.8, 4.0, 5.0, 6.1, 3.7, 3.3, 6.4,
+                  6.9, 6.0, 6.8, 4.4, 4.0, 3.8, 5.0, 4.9, 9.2, 9.6, 9.5, 6.3,
+                  9.5, 10.8, 14.0, 11.5, 10.0, 10.2, 10.3, 9.4, 8.9, 10.6, 10.5, 11.1,
+                  10.4, 10.7, 11.3, 10.2, 9.6, 10.2, 11.1, 10.8, 13.0, 12.5, 12.5, 11.3,
+                  10.1
+              ]
+        
+          }, {
+              name: 'Vik',
+              data: [
+                  0.2, 0.1, 0.1, 0.1, 0.3, 0.2, 0.3, 0.1, 0.7, 0.3, 0.2, 0.2,
+                  0.3, 0.1, 0.3, 0.4, 0.3, 0.2, 0.3, 0.2, 0.4, 0.0, 0.9, 0.3,
+                  0.7, 1.1, 1.8, 1.2, 1.4, 1.2, 0.9, 0.8, 0.9, 0.2, 0.4, 1.2,
+                  0.3, 2.3, 1.0, 0.7, 1.0, 0.8, 2.0, 1.2, 1.4, 3.7, 2.1, 2.0,
+                  1.5
+              ]
+          }],
+          navigation: {
+              menuItemStyle: {
+                  fontSize: '10px'
+              }
+          }
+        });
+        
+        Highcharts.chart('container-2', {
+          chart: {
+              type: 'spline',
+              scrollablePlotArea: {
+                  minWidth: 500,
+                  scrollPositionX: 1
+              }
+          },
+        
+          xAxis: {
+              type: 'datetime',
+              labels: {
+                  overflow: 'justify'
+              }
+          },
+          yAxis: {
+              title: {
+                  text: 'Wind speed (m/s)'
+              },
+              minorGridLineWidth: 0,
+              gridLineWidth: 0,
+              alternateGridColor: null,
+              plotBands: [{ // Light air
+                  from: 0.3,
+                  to: 1.5,
+                  color: 'rgba(68, 170, 213, 0.1)',
+                  label: {
+                      text: 'Light air',
+                      style: {
+                          color: '#606060'
+                      }
+                  }
+              }, { // Light breeze
+                  from: 1.5,
+                  to: 3.3,
+                  color: 'rgba(0, 0, 0, 0)',
+                  label: {
+                      text: 'Light breeze',
+                      style: {
+                          color: '#606060'
+                      }
+                  }
+              }, { // Gentle breeze
+                  from: 3.3,
+                  to: 5.5,
+                  color: 'rgba(68, 170, 213, 0.1)',
+                  label: {
+                      text: 'Gentle breeze',
+                      style: {
+                          color: '#606060'
+                      }
+                  }
+              }, { // Moderate breeze
+                  from: 5.5,
+                  to: 8,
+                  color: 'rgba(0, 0, 0, 0)',
+                  label: {
+                      text: 'Moderate breeze',
+                      style: {
+                          color: '#606060'
+                      }
+                  }
+              }, { // Fresh breeze
+                  from: 8,
+                  to: 11,
+                  color: 'rgba(68, 170, 213, 0.1)',
+                  label: {
+                      text: 'Fresh breeze',
+                      style: {
+                          color: '#606060'
+                      }
+                  }
+              }, { // Strong breeze
+                  from: 11,
+                  to: 14,
+                  color: 'rgba(0, 0, 0, 0)',
+                  label: {
+                      text: 'Strong breeze',
+                      style: {
+                          color: '#606060'
+                      }
+                  }
+              }, { // High wind
+                  from: 14,
+                  to: 15,
+                  color: 'rgba(68, 170, 213, 0.1)',
+                  label: {
+                      text: 'High wind',
+                      style: {
+                          color: '#606060'
+                      }
+                  }
+              }]
+          },
+          tooltip: {
+              valueSuffix: ' m/s'
+          },
+          plotOptions: {
+              spline: {
+                  lineWidth: 4,
+                  states: {
+                      hover: {
+                          lineWidth: 5
+                      }
+                  },
+                  marker: {
+                      enabled: false
+                  },
+                  pointInterval: 3600000, // one hour
+                  pointStart: Date.UTC(2018, 1, 13, 0, 0, 0)
+              }
+          },
+          series: [{
+              name: 'Hestavollane',
+              data: [
+                  3.7, 3.3, 3.9, 5.1, 3.5, 3.8, 4.0, 5.0, 6.1, 3.7, 3.3, 6.4,
+                  6.9, 6.0, 6.8, 4.4, 4.0, 3.8, 5.0, 4.9, 9.2, 9.6, 9.5, 6.3,
+                  9.5, 10.8, 14.0, 11.5, 10.0, 10.2, 10.3, 9.4, 8.9, 10.6, 10.5, 11.1,
+                  10.4, 10.7, 11.3, 10.2, 9.6, 10.2, 11.1, 10.8, 13.0, 12.5, 12.5, 11.3,
+                  10.1
+              ]
+        
+          }, {
+              name: 'Vik',
+              data: [
+                  0.2, 0.1, 0.1, 0.1, 0.3, 0.2, 0.3, 0.1, 0.7, 0.3, 0.2, 0.2,
+                  0.3, 0.1, 0.3, 0.4, 0.3, 0.2, 0.3, 0.2, 0.4, 0.0, 0.9, 0.3,
+                  0.7, 1.1, 1.8, 1.2, 1.4, 1.2, 0.9, 0.8, 0.9, 0.2, 0.4, 1.2,
+                  0.3, 2.3, 1.0, 0.7, 1.0, 0.8, 2.0, 1.2, 1.4, 3.7, 2.1, 2.0,
+                  1.5
+              ]
+          }],
+          navigation: {
+              menuItemStyle: {
+                  fontSize: '10px'
+              }
+          }
+        });
+        
+        Highcharts.chart('container-3', {
+          chart: {
+              type: 'spline',
+              scrollablePlotArea: {
+                  minWidth: 500,
+                  scrollPositionX: 1
+              }
+          },
+        
+          xAxis: {
+              type: 'datetime',
+              labels: {
+                  overflow: 'justify'
+              }
+          },
+          yAxis: {
+              title: {
+                  text: 'Wind speed (m/s)'
+              },
+              minorGridLineWidth: 0,
+              gridLineWidth: 0,
+              alternateGridColor: null,
+              plotBands: [{ // Light air
+                  from: 0.3,
+                  to: 1.5,
+                  color: 'rgba(68, 170, 213, 0.1)',
+                  label: {
+                      text: 'Light air',
+                      style: {
+                          color: '#606060'
+                      }
+                  }
+              }, { // Light breeze
+                  from: 1.5,
+                  to: 3.3,
+                  color: 'rgba(0, 0, 0, 0)',
+                  label: {
+                      text: 'Light breeze',
+                      style: {
+                          color: '#606060'
+                      }
+                  }
+              }, { // Gentle breeze
+                  from: 3.3,
+                  to: 5.5,
+                  color: 'rgba(68, 170, 213, 0.1)',
+                  label: {
+                      text: 'Gentle breeze',
+                      style: {
+                          color: '#606060'
+                      }
+                  }
+              }, { // Moderate breeze
+                  from: 5.5,
+                  to: 8,
+                  color: 'rgba(0, 0, 0, 0)',
+                  label: {
+                      text: 'Moderate breeze',
+                      style: {
+                          color: '#606060'
+                      }
+                  }
+              }, { // Fresh breeze
+                  from: 8,
+                  to: 11,
+                  color: 'rgba(68, 170, 213, 0.1)',
+                  label: {
+                      text: 'Fresh breeze',
+                      style: {
+                          color: '#606060'
+                      }
+                  }
+              }, { // Strong breeze
+                  from: 11,
+                  to: 14,
+                  color: 'rgba(0, 0, 0, 0)',
+                  label: {
+                      text: 'Strong breeze',
+                      style: {
+                          color: '#606060'
+                      }
+                  }
+              }, { // High wind
+                  from: 14,
+                  to: 15,
+                  color: 'rgba(68, 170, 213, 0.1)',
+                  label: {
+                      text: 'High wind',
+                      style: {
+                          color: '#606060'
+                      }
+                  }
+              }]
+          },
+          tooltip: {
+              valueSuffix: ' m/s'
+          },
+          plotOptions: {
+              spline: {
+                  lineWidth: 4,
+                  states: {
+                      hover: {
+                          lineWidth: 5
+                      }
+                  },
+                  marker: {
+                      enabled: false
+                  },
+                  pointInterval: 3600000, // one hour
+                  pointStart: Date.UTC(2018, 1, 13, 0, 0, 0)
+              }
+          },
+          series: [{
+              name: 'Hestavollane',
+              data: [
+                  3.7, 3.3, 3.9, 5.1, 3.5, 3.8, 4.0, 5.0, 6.1, 3.7, 3.3, 6.4,
+                  6.9, 6.0, 6.8, 4.4, 4.0, 3.8, 5.0, 4.9, 9.2, 9.6, 9.5, 6.3,
+                  9.5, 10.8, 14.0, 11.5, 10.0, 10.2, 10.3, 9.4, 8.9, 10.6, 10.5, 11.1,
+                  10.4, 10.7, 11.3, 10.2, 9.6, 10.2, 11.1, 10.8, 13.0, 12.5, 12.5, 11.3,
+                  10.1
+              ]
+        
+          }, {
+              name: 'Vik',
+              data: [
+                  0.2, 0.1, 0.1, 0.1, 0.3, 0.2, 0.3, 0.1, 0.7, 0.3, 0.2, 0.2,
+                  0.3, 0.1, 0.3, 0.4, 0.3, 0.2, 0.3, 0.2, 0.4, 0.0, 0.9, 0.3,
+                  0.7, 1.1, 1.8, 1.2, 1.4, 1.2, 0.9, 0.8, 0.9, 0.2, 0.4, 1.2,
+                  0.3, 2.3, 1.0, 0.7, 1.0, 0.8, 2.0, 1.2, 1.4, 3.7, 2.1, 2.0,
+                  1.5
+              ]
+          }],
+          navigation: {
+              menuItemStyle: {
+                  fontSize: '10px'
+              }
+          }
+        });
+        
+        Highcharts.chart('container-4', {
+          chart: {
+              type: 'spline',
+              scrollablePlotArea: {
+                  minWidth: 500,
+                  scrollPositionX: 1
+              }
+          },
+        
+          xAxis: {
+              type: 'datetime',
+              labels: {
+                  overflow: 'justify'
+              }
+          },
+          yAxis: {
+              title: {
+                  text: 'Wind speed (m/s)'
+              },
+              minorGridLineWidth: 0,
+              gridLineWidth: 0,
+              alternateGridColor: null,
+              plotBands: [{ // Light air
+                  from: 0.3,
+                  to: 1.5,
+                  color: 'rgba(68, 170, 213, 0.1)',
+                  label: {
+                      text: 'Light air',
+                      style: {
+                          color: '#606060'
+                      }
+                  }
+              }, { // Light breeze
+                  from: 1.5,
+                  to: 3.3,
+                  color: 'rgba(0, 0, 0, 0)',
+                  label: {
+                      text: 'Light breeze',
+                      style: {
+                          color: '#606060'
+                      }
+                  }
+              }, { // Gentle breeze
+                  from: 3.3,
+                  to: 5.5,
+                  color: 'rgba(68, 170, 213, 0.1)',
+                  label: {
+                      text: 'Gentle breeze',
+                      style: {
+                          color: '#606060'
+                      }
+                  }
+              }, { // Moderate breeze
+                  from: 5.5,
+                  to: 8,
+                  color: 'rgba(0, 0, 0, 0)',
+                  label: {
+                      text: 'Moderate breeze',
+                      style: {
+                          color: '#606060'
+                      }
+                  }
+              }, { // Fresh breeze
+                  from: 8,
+                  to: 11,
+                  color: 'rgba(68, 170, 213, 0.1)',
+                  label: {
+                      text: 'Fresh breeze',
+                      style: {
+                          color: '#606060'
+                      }
+                  }
+              }, { // Strong breeze
+                  from: 11,
+                  to: 14,
+                  color: 'rgba(0, 0, 0, 0)',
+                  label: {
+                      text: 'Strong breeze',
+                      style: {
+                          color: '#606060'
+                      }
+                  }
+              }, { // High wind
+                  from: 14,
+                  to: 15,
+                  color: 'rgba(68, 170, 213, 0.1)',
+                  label: {
+                      text: 'High wind',
+                      style: {
+                          color: '#606060'
+                      }
+                  }
+              }]
+          },
+          tooltip: {
+              valueSuffix: ' m/s'
+          },
+          plotOptions: {
+              spline: {
+                  lineWidth: 4,
+                  states: {
+                      hover: {
+                          lineWidth: 5
+                      }
+                  },
+                  marker: {
+                      enabled: false
+                  },
+                  pointInterval: 3600000, // one hour
+                  pointStart: Date.UTC(2018, 1, 13, 0, 0, 0)
+              }
+          },
+          series: [{
+              name: 'Hestavollane',
+              data: [
+                  3.7, 3.3, 3.9, 5.1, 3.5, 3.8, 4.0, 5.0, 6.1, 3.7, 3.3, 6.4,
+                  6.9, 6.0, 6.8, 4.4, 4.0, 3.8, 5.0, 4.9, 9.2, 9.6, 9.5, 6.3,
+                  9.5, 10.8, 14.0, 11.5, 10.0, 10.2, 10.3, 9.4, 8.9, 10.6, 10.5, 11.1,
+                  10.4, 10.7, 11.3, 10.2, 9.6, 10.2, 11.1, 10.8, 13.0, 12.5, 12.5, 11.3,
+                  10.1
+              ]
+        
+          }, {
+              name: 'Vik',
+              data: [
+                  0.2, 0.1, 0.1, 0.1, 0.3, 0.2, 0.3, 0.1, 0.7, 0.3, 0.2, 0.2,
+                  0.3, 0.1, 0.3, 0.4, 0.3, 0.2, 0.3, 0.2, 0.4, 0.0, 0.9, 0.3,
+                  0.7, 1.1, 1.8, 1.2, 1.4, 1.2, 0.9, 0.8, 0.9, 0.2, 0.4, 1.2,
+                  0.3, 2.3, 1.0, 0.7, 1.0, 0.8, 2.0, 1.2, 1.4, 3.7, 2.1, 2.0,
+                  1.5
+              ]
+          }],
+          navigation: {
+              menuItemStyle: {
+                  fontSize: '10px'
+              }
+          }
+        });
+      </script>
+      <script type="text/javascript" src="scripts/jquery.min.js"></script>
+      <script type="text/javascript" src="scripts/libs.min.js"></script>
+      <script type="text/javascript" src="scripts/main.js"></script>
+    </main>
+  </body>
+</html>

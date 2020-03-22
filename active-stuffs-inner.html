@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Active  Stuffs</title>
+    <link href="styles/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <main id="main">
+      <header class="header" id="header"> 
+        <div class="flex-wrap">
+          <div class="col-auto">
+            <h3 class="header__h3">Welcome back, Kyrill</h3>
+            <h1 class="header__h1">Thanks for being with us.</h1>
+          </div>
+          <div class="col-auto ml-auto"><a class="header__message" href="chat.html">
+              <svg class="icon icon--message">
+                <use xlink:href="img/svg-sprite.svg#message"></use>
+              </svg></a>
+            <div class="header__notifications">
+              <div class="header__notifications--badge"></div>
+              <svg class="icon icon--notifications">
+                <use xlink:href="img/svg-sprite.svg#notifications"></use>
+              </svg>
+            </div>
+            <div class="header__user"><a class="header__user-avatar" href="" style="background-image:url('img/pic-8.jpg')"></a>
+              <div class="header__user-inner">
+                <div class="header__user--name">Kirill Moneylover</div>
+                <div class="header__user--date">Member since 2019</div>
+                <div class="header__user--icon">
+                  <svg class="icon icon--arrow-down">
+                    <use xlink:href="img/svg-sprite.svg#arrow-down"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="header__user-dropdown"> 
+                <div class="header__user-dropdown--inner">
+                  <div class="header__user-list">
+                    <div class="header__user-list-item"><a class="header__user-list-link" href="">Настройки</a></div>
+                    <div class="header__user-list-item"><a class="header__user-list-link" href="">Выход</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="flex-wrap">
+        <div class="aside">
+          <div class="menu">
+            <div class="menu__item"><a class="menu__link menu__link--active" href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--chart">
+                    <use xlink:href="img/svg-sprite.svg#chart"></use>
+                  </svg>
+                </div><span class="menu__item-name">History</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--statistics">
+                    <use xlink:href="img/svg-sprite.svg#statistics"></use>
+                  </svg>
+                </div><span class="menu__item-name">Trading</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--settings">
+                    <use xlink:href="img/svg-sprite.svg#settings"></use>
+                  </svg>
+                </div><span class="menu__item-name">Tasks</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--strategy">
+                    <use xlink:href="img/svg-sprite.svg#strategy"></use>
+                  </svg>
+                </div><span class="menu__item-name">Strategies</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--support">
+                    <use xlink:href="img/svg-sprite.svg#support"></use>
+                  </svg>
+                </div><span class="menu__item-name">Support</span></a></div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="flex-p-wrap mt-30"> 
+            <div class="col-2-3">
+              <div class="inner-block p-inner">
+                <div class="category-title"> 
+                  <div class="category-title__icon">
+                    <svg class="icon icon--chart">
+                      <use xlink:href="img/svg-sprite.svg#chart"></use>
+                    </svg>
+                  </div>Active  <span>Stuffs</span>
+                </div>
+                <div class="table-info__wrap">
+                  <div class="table-info__scroll active-stuffs__table-s mCustomScrollbar">
+                    <table class="table-info">
+                      <tr>
+                        <th>Date</th>
+                        <th>Token</th>
+                        <th class="text-right">Old Price</th>
+                        <th class="text-right">New Price</th>
+                        <th class="text-right">Percent Change</th>
+                      </tr>
+                      <tr class="table-info__row-active">
+                        <td>5 min ago</td>
+                        <td>
+                          <div class="table-info__token">
+                            <svg class="icon icon--btc">
+                              <use xlink:href="img/svg-sprite.svg#btc"></use>
+                            </svg>BTC
+                          </div>
+                        </td>
+                        <td class="text-right table-info__down">0.0443534 BTC</td>
+                        <td class="text-right table-info__up">14.2623232 BTC</td>
+                        <td class="text-right table-info__up">14.26%</td>
+                      </tr>
+                      <tr>
+                        <td>5 min ago</td>
+                        <td>
+                          <div class="table-info__token">
+                            <svg class="icon icon--btc">
+                              <use xlink:href="img/svg-sprite.svg#btc"></use>
+                            </svg>BTC
+                          </div>
+                        </td>
+                        <td class="text-right table-info__down">0.0443534 BTC</td>
+                        <td class="text-right table-info__up">14.2623232 BTC</td>
+                        <td class="text-right table-info__down">8%</td>
+                      </tr>
+                      <tr>
+                        <td>2 min ago</td>
+                        <td>
+                          <div class="table-info__token">
+                            <svg class="icon icon--btc">
+                              <use xlink:href="img/svg-sprite.svg#btc"></use>
+                            </svg>BTC
+                          </div>
+                        </td>
+                        <td class="text-right table-info__down">0.0443534 BTC</td>
+                        <td class="text-right table-info__up">14.2623232 BTC</td>
+                        <td class="text-right table-info__down">11%</td>
+                      </tr>
+                      <tr>
+                        <td>1 min ago</td>
+                        <td>
+                          <div class="table-info__token">
+                            <svg class="icon icon--btc">
+                              <use xlink:href="img/svg-sprite.svg#btc"></use>
+                            </svg>BTC
+                          </div>
+                        </td>
+                        <td class="text-right table-info__down">0.0443534 BTC</td>
+                        <td class="text-right table-info__up">14.2623232 BTC</td>
+                        <td class="text-right table-info__down">8%</td>
+                      </tr>
+                      <tr>
+                        <td>4 min ago</td>
+                        <td>
+                          <div class="table-info__token">
+                            <svg class="icon icon--btc">
+                              <use xlink:href="img/svg-sprite.svg#btc"></use>
+                            </svg>BTC
+                          </div>
+                        </td>
+                        <td class="text-right table-info__down">0.0443534 BTC</td>
+                        <td class="text-right table-info__up">14.2623232 BTC</td>
+                        <td class="text-right table-info__down">11%</td>
+                      </tr>
+                      <tr>
+                        <td>3 min ago</td>
+                        <td>
+                          <div class="table-info__token">
+                            <svg class="icon icon--btc">
+                              <use xlink:href="img/svg-sprite.svg#btc"></use>
+                            </svg>BTC
+                          </div>
+                        </td>
+                        <td class="text-right table-info__down">0.0443534 BTC</td>
+                        <td class="text-right table-info__up">14.2623232 BTC</td>
+                        <td class="text-right table-info__down">8%</td>
+                      </tr>
+                      <tr>
+                        <td>4 min ago</td>
+                        <td>
+                          <div class="table-info__token">
+                            <svg class="icon icon--btc">
+                              <use xlink:href="img/svg-sprite.svg#btc"></use>
+                            </svg>BTC
+                          </div>
+                        </td>
+                        <td class="text-right table-info__down">0.0443534 BTC</td>
+                        <td class="text-right table-info__up">14.2623232 BTC</td>
+                        <td class="text-right table-info__down">11%</td>
+                      </tr>
+                      <tr>
+                        <td>5 min ago</td>
+                        <td>
+                          <div class="table-info__token">
+                            <svg class="icon icon--btc">
+                              <use xlink:href="img/svg-sprite.svg#btc"></use>
+                            </svg>BTC
+                          </div>
+                        </td>
+                        <td class="text-right table-info__down">0.0443534 BTC</td>
+                        <td class="text-right table-info__up">14.2623232 BTC</td>
+                        <td class="text-right table-info__down">8%</td>
+                      </tr>
+                      <tr>
+                        <td>6 min ago</td>
+                        <td>
+                          <div class="table-info__token">
+                            <svg class="icon icon--btc">
+                              <use xlink:href="img/svg-sprite.svg#btc"></use>
+                            </svg>BTC
+                          </div>
+                        </td>
+                        <td class="text-right table-info__down">0.0443534 BTC</td>
+                        <td class="text-right table-info__up">14.2623232 BTC</td>
+                        <td class="text-right table-info__down">11%</td>
+                      </tr>
+                      <tr>
+                        <td>7 min ago</td>
+                        <td>
+                          <div class="table-info__token">
+                            <svg class="icon icon--btc">
+                              <use xlink:href="img/svg-sprite.svg#btc"></use>
+                            </svg>BTC
+                          </div>
+                        </td>
+                        <td class="text-right table-info__down">0.0443534 BTC</td>
+                        <td class="text-right table-info__up">14.2623232 BTC</td>
+                        <td class="text-right table-info__down"></td>
+                      </tr>
+                      <tr>
+                        <td>5 min ago</td>
+                        <td>
+                          <div class="table-info__token">
+                            <svg class="icon icon--btc">
+                              <use xlink:href="img/svg-sprite.svg#btc"></use>
+                            </svg>BTC
+                          </div>
+                        </td>
+                        <td class="text-right table-info__down">0.0443534 BTC</td>
+                        <td class="text-right table-info__up">14.2623232 BTC</td>
+                        <td class="text-right table-info__down">8%</td>
+                      </tr>
+                      <tr>
+                        <td>2 min ago</td>
+                        <td>
+                          <div class="table-info__token">
+                            <svg class="icon icon--btc">
+                              <use xlink:href="img/svg-sprite.svg#btc"></use>
+                            </svg>BTC
+                          </div>
+                        </td>
+                        <td class="text-right table-info__down">0.0443534 BTC</td>
+                        <td class="text-right table-info__up">14.2623232 BTC</td>
+                        <td class="text-right table-info__down">11%</td>
+                      </tr>
+                      <tr>
+                        <td>1 min ago</td>
+                        <td>
+                          <div class="table-info__token">
+                            <svg class="icon icon--btc">
+                              <use xlink:href="img/svg-sprite.svg#btc"></use>
+                            </svg>BTC
+                          </div>
+                        </td>
+                        <td class="text-right table-info__down">0.0443534 BTC</td>
+                        <td class="text-right table-info__up">14.2623232 BTC</td>
+                        <td class="text-right table-info__down">8%</td>
+                      </tr>
+                      <tr>
+                        <td>4 min ago</td>
+                        <td>
+                          <div class="table-info__token">
+                            <svg class="icon icon--btc">
+                              <use xlink:href="img/svg-sprite.svg#btc"></use>
+                            </svg>BTC
+                          </div>
+                        </td>
+                        <td class="text-right table-info__down">0.0443534 BTC</td>
+                        <td class="text-right table-info__up">14.2623232 BTC</td>
+                        <td class="text-right table-info__down">11%</td>
+                      </tr>
+                      <tr>
+                        <td>3 min ago</td>
+                        <td>
+                          <div class="table-info__token">
+                            <svg class="icon icon--btc">
+                              <use xlink:href="img/svg-sprite.svg#btc"></use>
+                            </svg>BTC
+                          </div>
+                        </td>
+                        <td class="text-right table-info__down">0.0443534 BTC</td>
+                        <td class="text-right table-info__up">14.2623232 BTC</td>
+                        <td class="text-right table-info__down">8%</td>
+                      </tr>
+                      <tr>
+                        <td>4 min ago</td>
+                        <td>
+                          <div class="table-info__token">
+                            <svg class="icon icon--btc">
+                              <use xlink:href="img/svg-sprite.svg#btc"></use>
+                            </svg>BTC
+                          </div>
+                        </td>
+                        <td class="text-right table-info__down">0.0443534 BTC</td>
+                        <td class="text-right table-info__up">14.2623232 BTC</td>
+                        <td class="text-right table-info__down">11%</td>
+                      </tr>
+                      <tr>
+                        <td>5 min ago</td>
+                        <td>
+                          <div class="table-info__token">
+                            <svg class="icon icon--btc">
+                              <use xlink:href="img/svg-sprite.svg#btc"></use>
+                            </svg>BTC
+                          </div>
+                        </td>
+                        <td class="text-right table-info__down">0.0443534 BTC</td>
+                        <td class="text-right table-info__up">14.2623232 BTC</td>
+                        <td class="text-right table-info__down">8%</td>
+                      </tr>
+                      <tr>
+                        <td>6 min ago</td>
+                        <td>
+                          <div class="table-info__token">
+                            <svg class="icon icon--btc">
+                              <use xlink:href="img/svg-sprite.svg#btc"></use>
+                            </svg>BTC
+                          </div>
+                        </td>
+                        <td class="text-right table-info__down">0.0443534 BTC</td>
+                        <td class="text-right table-info__up">14.2623232 BTC</td>
+                        <td class="text-right table-info__down">11%</td>
+                      </tr>
+                      <tr>
+                        <td>7 min ago</td>
+                        <td>
+                          <div class="table-info__token">
+                            <svg class="icon icon--btc">
+                              <use xlink:href="img/svg-sprite.svg#btc"></use>
+                            </svg>BTC
+                          </div>
+                        </td>
+                        <td class="text-right table-info__down">0.0443534 BTC</td>
+                        <td class="text-right table-info__up">14.2623232 BTC</td>
+                        <td class="text-right table-info__down"></td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-1-3">
+              <div class="inner-block min-h-full">
+                <div class="tabs">
+                  <div class="tabs__list tabs__list-btn"> 
+                    <div class="col-1-2 tabs__list-item" data-tab="#your-assets">Ваши активы</div>
+                    <div class="col-1-2 tabs__list-item tabs__list-item--active" data-tab="#volatile">Волатильные</div>
+                  </div>
+                  <div class="tabs__cont">
+                    <div class="tabs__item" id="your-assets"> 
+                      <table class="table-assets">
+                        <tr>
+                          <th>Market</th>
+                          <th class="text-right">1D</th>
+                          <th>Vol</th>
+                          <th class="text-right">1D</th>
+                          <th>Vol</th>
+                          <th class="text-right">1D</th>
+                          <th>Vol</th>
+                          <th class="text-right">1D</th>
+                          <th>Vol</th>
+                          <th class="text-right">1D</th>
+                          <th>Vol</th>
+                        </tr>
+                        <tr class="table-assets__active-row">
+                          <td class="table-assets__name">BTC</td>
+                          <td class="table-assets__down table-assets__price-down">14.26</td>
+                          <td class="table-assets__price-down">356M</td>
+                          <td class="table-assets__down table-assets__price-down">14.26</td>
+                          <td class="table-assets__price-down">356M</td>
+                          <td class="table-assets__up table-assets__price-up">14.26</td>
+                          <td class="table-assets__price-up">356M</td>
+                          <td class="table-assets__up">14.26</td>
+                          <td>356M</td>
+                          <td class="table-assets__down">14.26</td>
+                          <td>356M</td>
+                        </tr>
+                        <tr>
+                          <td class="table-assets__name">BNB</td>
+                          <td class="table-assets__down table-assets__price-down-2">9.55</td>
+                          <td class="table-assets__price-down-2">71.5M</td>
+                          <td class="table-assets__down table-assets__price-down-2">9.55</td>
+                          <td class="table-assets__price-down-2">71.5M</td>
+                          <td class="table-assets__down table-assets__price-down">9.55</td>
+                          <td class="table-assets__price-down">71.5M</td>
+                          <td class="table-assets__down table-assets__price-down">9.55</td>
+                          <td class="table-assets__price-down">71.5M</td>
+                          <td class="table-assets__down">9.55</td>
+                          <td>71.5M</td>
+                        </tr>
+                        <tr>
+                          <td class="table-assets__name">ETH</td>
+                          <td class="table-assets__down table-assets__price-down">6.29</td>
+                          <td class="table-assets__price-down">71.5M</td>
+                          <td class="table-assets__down">6.29</td>
+                          <td>82.9M</td>
+                          <td class="table-assets__down">6.29</td>
+                          <td>82.9M</td>
+                          <td class="table-assets__down">6.29</td>
+                          <td>82.9M</td>
+                          <td class="table-assets__down">6.29</td>
+                          <td>82.9M</td>
+                        </tr>
+                        <tr>
+                          <td class="table-assets__name">XRP</td>
+                          <td class="table-assets__down table-assets__price-down-2">6.26</td>
+                          <td class="table-assets__price-down-2">82.9M</td>
+                          <td class="table-assets__up table-assets__price-down">6.26</td>
+                          <td class="table-assets__price-down">45.5M</td>
+                          <td class="table-assets__down">6.26</td>
+                          <td>45.5M</td>
+                          <td class="table-assets__down">6.26</td>
+                          <td>45.5M</td>
+                          <td class="table-assets__down">6.26</td>
+                          <td>45.5M</td>
+                        </tr>
+                        <tr>
+                          <td class="table-assets__name">EOS</td>
+                          <td class="table-assets__down table-assets__price-down">8.67</td>
+                          <td class="table-assets__price-down">45.5M</td>
+                          <td class="table-assets__up">3.98</td>
+                          <td>55.2M</td>
+                          <td class="table-assets__down">8.67</td>
+                          <td>55.2M</td>
+                          <td class="table-assets__down">8.67</td>
+                          <td>55.2M</td>
+                          <td class="table-assets__down">8.67</td>
+                          <td>55.2M</td>
+                        </tr>
+                        <tr>
+                          <td class="table-assets__name">TRX</td>
+                          <td class="table-assets__down">9.77</td>
+                          <td>55.2M</td>
+                          <td class="table-assets__down">8.67</td>
+                          <td>27.2M</td>
+                          <td class="table-assets__down">9.77</td>
+                          <td>27.2M</td>
+                          <td class="table-assets__down">9.77</td>
+                          <td>27.2M</td>
+                          <td class="table-assets__down">9.77</td>
+                          <td>27.2M</td>
+                        </tr>
+                        <tr>
+                          <td class="table-assets__name">ADA</td>
+                          <td class="table-assets__down">12.28</td>
+                          <td>26.8M</td>
+                          <td class="table-assets__down">9.77</td>
+                          <td>29.5M</td>
+                          <td class="table-assets__up">12.28</td>
+                          <td>29.5M</td>
+                          <td class="table-assets__up">12.28</td>
+                          <td>29.5M</td>
+                          <td class="table-assets__down">12.28</td>
+                          <td>29.5M</td>
+                        </tr>
+                        <tr>
+                          <td class="table-assets__name">LTC</td>
+                          <td class="table-assets__up">10.88</td>
+                          <td>27.2M</td>
+                          <td class="table-assets__down">12.28</td>
+                          <td>15.1M </td>
+                          <td class="table-assets__down">10.88</td>
+                          <td>15.1M</td>
+                          <td class="table-assets__down">10.88</td>
+                          <td>15.1M</td>
+                          <td class="table-assets__down">10.88</td>
+                          <td>15.1M</td>
+                        </tr>
+                        <tr>
+                          <td class="table-assets__name">BTT</td>
+                          <td class="table-assets__down">3.98</td>
+                          <td>29.5M</td>
+                          <td class="table-assets__down">10.88</td>
+                          <td>15.1M </td>
+                          <td class="table-assets__down">3.98</td>
+                          <td>15.1M </td>
+                          <td class="table-assets__down">3.98 </td>
+                          <td>15.1M </td>
+                          <td class="table-assets__down">3.98</td>
+                          <td>15.1M</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="tabs__item tabs__item--active" id="volatile"> 
+                      <div class="btn-row-c">
+                        <div class="btn-row-c__item">
+                          <div class="btn-row-c__link">Day</div>
+                        </div>
+                        <div class="btn-row-c__item">
+                          <div class="btn-row-c__link btn-row-c__link--active">Week</div>
+                        </div>
+                        <div class="btn-row-c__item">
+                          <div class="btn-row-c__link">Month</div>
+                        </div>
+                      </div>
+                      <div class="table-token">
+                        <div class="flex-wrap">
+                          <div class="col-auto">
+                            <div class="table-token__th">Token</div>
+                          </div>
+                          <div class="col-auto ml-auto">
+                            <div class="table-token__th">Changes Qty</div>
+                          </div>
+                        </div>
+                        <div class="table-token__item">
+                          <div class="flex-wrap">
+                            <div class="col-auto"> 
+                              <svg class="icon icon--litecoin">
+                                <use xlink:href="img/svg-sprite.svg#litecoin"></use>
+                              </svg>
+                              <div class="table-token__name">WAVES/US</div>
+                            </div>
+                            <div class="col-auto ml-auto">
+                              <div class="text-green">25%</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="table-token__item">
+                          <div class="flex-wrap">
+                            <div class="col-auto"> 
+                              <svg class="icon icon--litecoin">
+                                <use xlink:href="img/svg-sprite.svg#litecoin"></use>
+                              </svg>
+                              <div class="table-token__name">LITECOIN/US</div>
+                            </div>
+                            <div class="col-auto ml-auto">
+                              <div class="text-red">8%</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="table-token__item">
+                          <div class="flex-wrap">
+                            <div class="col-auto"> 
+                              <svg class="icon icon--litecoin">
+                                <use xlink:href="img/svg-sprite.svg#litecoin"></use>
+                              </svg>
+                              <div class="table-token__name">WAVES/US</div>
+                            </div>
+                            <div class="col-auto ml-auto">
+                              <div class="text-green">25%</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript" src="scripts/jquery.min.js"></script>
+      <script type="text/javascript" src="scripts/libs.min.js"></script>
+      <script type="text/javascript" src="scripts/main.js"></script>
+    </main>
+  </body>
+</html>

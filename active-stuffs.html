@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+    <link href="styles/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <main id="main">
+      <header class="header" id="header"> 
+        <div class="flex-wrap">
+          <div class="col-auto">
+            <h3 class="header__h3">Welcome back, Kyrill</h3>
+            <h1 class="header__h1">Thanks for being with us.</h1>
+          </div>
+          <div class="col-auto ml-auto"><a class="header__message" href="chat.html">
+              <svg class="icon icon--message">
+                <use xlink:href="img/svg-sprite.svg#message"></use>
+              </svg></a>
+            <div class="header__notifications">
+              <div class="header__notifications--badge"></div>
+              <svg class="icon icon--notifications">
+                <use xlink:href="img/svg-sprite.svg#notifications"></use>
+              </svg>
+            </div>
+            <div class="header__user"><a class="header__user-avatar" href="" style="background-image:url('img/pic-8.jpg')"></a>
+              <div class="header__user-inner">
+                <div class="header__user--name">Kirill Moneylover</div>
+                <div class="header__user--date">Member since 2019</div>
+                <div class="header__user--icon">
+                  <svg class="icon icon--arrow-down">
+                    <use xlink:href="img/svg-sprite.svg#arrow-down"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="header__user-dropdown"> 
+                <div class="header__user-dropdown--inner">
+                  <div class="header__user-list">
+                    <div class="header__user-list-item"><a class="header__user-list-link" href="">Настройки</a></div>
+                    <div class="header__user-list-item"><a class="header__user-list-link" href="">Выход</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="flex-wrap">
+        <div class="aside">
+          <div class="menu">
+            <div class="menu__item"><a class="menu__link menu__link--active" href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--chart">
+                    <use xlink:href="img/svg-sprite.svg#chart"></use>
+                  </svg>
+                </div><span class="menu__item-name">History</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--statistics">
+                    <use xlink:href="img/svg-sprite.svg#statistics"></use>
+                  </svg>
+                </div><span class="menu__item-name">Trading</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--settings">
+                    <use xlink:href="img/svg-sprite.svg#settings"></use>
+                  </svg>
+                </div><span class="menu__item-name">Tasks</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--strategy">
+                    <use xlink:href="img/svg-sprite.svg#strategy"></use>
+                  </svg>
+                </div><span class="menu__item-name">Strategies</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--support">
+                    <use xlink:href="img/svg-sprite.svg#support"></use>
+                  </svg>
+                </div><span class="menu__item-name">Support</span></a></div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="flex-p-wrap mt-30"> 
+            <div class="col-2-3">
+              <div class="inner-block h-full">
+                <div class="flex-wrap h-full">
+                  <div class="col-1-2">
+                    <div class="active-stuffs min-h-full">
+                      <div class="category-title"> 
+                        <div class="category-title__icon">
+                          <svg class="icon icon--chart">
+                            <use xlink:href="img/svg-sprite.svg#chart"></use>
+                          </svg>
+                        </div>Active  <span>Stuffs</span>
+                      </div>
+                      <div class="active-stuffs__list mCustomScrollbar">
+                        <div class="active-stuffs__item">
+                          <div class="active-stuffs__inner">
+                            <div class="active-stuffs__icon ">
+                              <svg class="icon icon--ethereum">
+                                <use xlink:href="img/svg-sprite.svg#ethereum"></use>
+                              </svg>
+                            </div>
+                            <div class="active-stuffs__name">Ethereum</div>
+                            <div class="flex-wrap"> 
+                              <div class="col-auto"> 
+                                <div class="active-stuffs__price">132.32<span class="active-stuffs__price--num">1500</span><span class="active-stuffs__price--currency">ETH</span></div>
+                              </div>
+                              <div class="col-auto ml-auto"> 
+                                <div class="active-stuffs__percent active-stuffs__percent--down">-0.22%</div>
+                              </div>
+                            </div>
+                            <div class="flex-wrap"> 
+                              <div class="col-auto"> 
+                                <div class="active-stuffs__val">2141.45 USD</div>
+                              </div>
+                              <div class="col-auto ml-auto"> 
+                                <div class="active-stuffs__val">31.5 USD</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="active-stuffs__item">
+                          <div class="active-stuffs__inner">
+                            <div class="active-stuffs__icon active-stuffs__icon--violet">
+                              <svg class="icon icon--ethereum">
+                                <use xlink:href="img/svg-sprite.svg#ethereum"></use>
+                              </svg>
+                            </div>
+                            <div class="active-stuffs__name">BTC</div>
+                            <div class="flex-wrap"> 
+                              <div class="col-auto"> 
+                                <div class="active-stuffs__price">132.32<span class="active-stuffs__price--num">1500</span><span class="active-stuffs__price--currency">ETH</span></div>
+                              </div>
+                              <div class="col-auto ml-auto"> 
+                                <div class="active-stuffs__percent active-stuffs__percent--up">-0.22%</div>
+                              </div>
+                            </div>
+                            <div class="flex-wrap"> 
+                              <div class="col-auto"> 
+                                <div class="active-stuffs__val">2141.45 USD</div>
+                              </div>
+                              <div class="col-auto ml-auto"> 
+                                <div class="active-stuffs__val">31.5 USD</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="active-stuffs__item">
+                          <div class="active-stuffs__inner active-stuffs__inner--active">
+                            <div class="active-stuffs__icon-c">
+                              <svg class="icon icon--btc">
+                                <use xlink:href="img/svg-sprite.svg#btc"></use>
+                              </svg>
+                            </div>
+                            <div class="active-stuffs__name">BTC</div>
+                            <div class="flex-wrap"> 
+                              <div class="col-auto"> 
+                                <div class="active-stuffs__price">132.32<span class="active-stuffs__price--num">1500</span><span class="active-stuffs__price--currency">ETH</span></div>
+                              </div>
+                              <div class="col-auto ml-auto"> 
+                                <div class="active-stuffs__percent active-stuffs__percent--up">-0.22%</div>
+                              </div>
+                            </div>
+                            <div class="flex-wrap"> 
+                              <div class="col-auto"> 
+                                <div class="active-stuffs__val">2141.45 USD</div>
+                              </div>
+                              <div class="col-auto ml-auto"> 
+                                <div class="active-stuffs__val">31.5 USD</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="active-stuffs__item">
+                          <div class="active-stuffs__inner ">
+                            <div class="active-stuffs__icon-c">
+                              <svg class="icon icon--litecoin">
+                                <use xlink:href="img/svg-sprite.svg#litecoin"></use>
+                              </svg>
+                            </div>
+                            <div class="active-stuffs__name">Ltecoin</div>
+                            <div class="flex-wrap"> 
+                              <div class="col-auto"> 
+                                <div class="active-stuffs__price">132.32<span class="active-stuffs__price--num">1500</span><span class="active-stuffs__price--currency">ETH</span></div>
+                              </div>
+                              <div class="col-auto ml-auto"> 
+                                <div class="active-stuffs__percent active-stuffs__percent--down">-0.22%</div>
+                              </div>
+                            </div>
+                            <div class="flex-wrap"> 
+                              <div class="col-auto"> 
+                                <div class="active-stuffs__val">2141.45 USD</div>
+                              </div>
+                              <div class="col-auto ml-auto"> 
+                                <div class="active-stuffs__val">31.5 USD</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="active-stuffs__item">
+                          <div class="active-stuffs__inner ">
+                            <div class="active-stuffs__icon-c">
+                              <svg class="icon icon--binance">
+                                <use xlink:href="img/svg-sprite.svg#binance"></use>
+                              </svg>
+                            </div>
+                            <div class="active-stuffs__name">Binance</div>
+                            <div class="flex-wrap"> 
+                              <div class="col-auto"> 
+                                <div class="active-stuffs__price">132.32<span class="active-stuffs__price--num">1500</span><span class="active-stuffs__price--currency">ETH</span></div>
+                              </div>
+                              <div class="col-auto ml-auto"> 
+                                <div class="active-stuffs__percent active-stuffs__percent--up">-0.22%</div>
+                              </div>
+                            </div>
+                            <div class="flex-wrap"> 
+                              <div class="col-auto"> 
+                                <div class="active-stuffs__val">2141.45 USD</div>
+                              </div>
+                              <div class="col-auto ml-auto"> 
+                                <div class="active-stuffs__val">31.5 USD</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-1-2 flex-center-cont text-center">
+                    <div class="p-cont">
+                      <h2 class="m-0 mb-8">Send Ethereum to...</h2>
+                      <p>Wheels come in many variations that affect grip, top speed, cryptocurrency, and turning </p>
+                      <div class="form-row w-230 m-auto">
+                        <select class="select-icon select-icon__large">
+                          <option data-icon="binance">Binance</option>
+                          <option data-icon="litecoin">Litecoin</option>
+                          <option data-icon="binance">Binance 3</option>
+                        </select>
+                        <div class="form-row__hint">Выйдет<span>2141.45 USD</span></div>
+                      </div><a class="btn btn__xxl btn__blue-2 w-230 mt-8" href="#">Submit</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-1-3">
+              <div class="inner-block min-h-full">
+                <div class="tabs">
+                  <div class="tabs__list tabs__list-btn"> 
+                    <div class="col-1-2 tabs__list-item tabs__list-item--active" data-tab="#your-assets">Ваши активы</div>
+                    <div class="col-1-2 tabs__list-item" data-tab="#volatile">Волатильные</div>
+                  </div>
+                  <div class="tabs__cont">
+                    <div class="tabs__item tabs__item--active" id="your-assets"> 
+                      <table class="table-assets">
+                        <tr>
+                          <th>Market</th>
+                          <th class="text-right">1D</th>
+                          <th>Vol</th>
+                          <th class="text-right">1D</th>
+                          <th>Vol</th>
+                          <th class="text-right">1D</th>
+                          <th>Vol</th>
+                          <th class="text-right">1D</th>
+                          <th>Vol</th>
+                          <th class="text-right">1D</th>
+                          <th>Vol</th>
+                        </tr>
+                        <tr class="table-assets__active-row">
+                          <td class="table-assets__name">BTC</td>
+                          <td class="table-assets__down table-assets__price-down">14.26</td>
+                          <td class="table-assets__price-down">356M</td>
+                          <td class="table-assets__down table-assets__price-down">14.26</td>
+                          <td class="table-assets__price-down">356M</td>
+                          <td class="table-assets__up table-assets__price-up">14.26</td>
+                          <td class="table-assets__price-up">356M</td>
+                          <td class="table-assets__up">14.26</td>
+                          <td>356M</td>
+                          <td class="table-assets__down">14.26</td>
+                          <td>356M</td>
+                        </tr>
+                        <tr>
+                          <td class="table-assets__name">BNB</td>
+                          <td class="table-assets__down table-assets__price-down-2">9.55</td>
+                          <td class="table-assets__price-down-2">71.5M</td>
+                          <td class="table-assets__down table-assets__price-down-2">9.55</td>
+                          <td class="table-assets__price-down-2">71.5M</td>
+                          <td class="table-assets__down table-assets__price-down">9.55</td>
+                          <td class="table-assets__price-down">71.5M</td>
+                          <td class="table-assets__down table-assets__price-down">9.55</td>
+                          <td class="table-assets__price-down">71.5M</td>
+                          <td class="table-assets__down">9.55</td>
+                          <td>71.5M</td>
+                        </tr>
+                        <tr>
+                          <td class="table-assets__name">ETH</td>
+                          <td class="table-assets__down table-assets__price-down">6.29</td>
+                          <td class="table-assets__price-down">71.5M</td>
+                          <td class="table-assets__down">6.29</td>
+                          <td>82.9M</td>
+                          <td class="table-assets__down">6.29</td>
+                          <td>82.9M</td>
+                          <td class="table-assets__down">6.29</td>
+                          <td>82.9M</td>
+                          <td class="table-assets__down">6.29</td>
+                          <td>82.9M</td>
+                        </tr>
+                        <tr>
+                          <td class="table-assets__name">XRP</td>
+                          <td class="table-assets__down table-assets__price-down-2">6.26</td>
+                          <td class="table-assets__price-down-2">82.9M</td>
+                          <td class="table-assets__up table-assets__price-down">6.26</td>
+                          <td class="table-assets__price-down">45.5M</td>
+                          <td class="table-assets__down">6.26</td>
+                          <td>45.5M</td>
+                          <td class="table-assets__down">6.26</td>
+                          <td>45.5M</td>
+                          <td class="table-assets__down">6.26</td>
+                          <td>45.5M</td>
+                        </tr>
+                        <tr>
+                          <td class="table-assets__name">EOS</td>
+                          <td class="table-assets__down table-assets__price-down">8.67</td>
+                          <td class="table-assets__price-down">45.5M</td>
+                          <td class="table-assets__up">3.98</td>
+                          <td>55.2M</td>
+                          <td class="table-assets__down">8.67</td>
+                          <td>55.2M</td>
+                          <td class="table-assets__down">8.67</td>
+                          <td>55.2M</td>
+                          <td class="table-assets__down">8.67</td>
+                          <td>55.2M</td>
+                        </tr>
+                        <tr>
+                          <td class="table-assets__name">TRX</td>
+                          <td class="table-assets__down">9.77</td>
+                          <td>55.2M</td>
+                          <td class="table-assets__down">8.67</td>
+                          <td>27.2M</td>
+                          <td class="table-assets__down">9.77</td>
+                          <td>27.2M</td>
+                          <td class="table-assets__down">9.77</td>
+                          <td>27.2M</td>
+                          <td class="table-assets__down">9.77</td>
+                          <td>27.2M</td>
+                        </tr>
+                        <tr>
+                          <td class="table-assets__name">ADA</td>
+                          <td class="table-assets__down">12.28</td>
+                          <td>26.8M</td>
+                          <td class="table-assets__down">9.77</td>
+                          <td>29.5M</td>
+                          <td class="table-assets__up">12.28</td>
+                          <td>29.5M</td>
+                          <td class="table-assets__up">12.28</td>
+                          <td>29.5M</td>
+                          <td class="table-assets__down">12.28</td>
+                          <td>29.5M</td>
+                        </tr>
+                        <tr>
+                          <td class="table-assets__name">LTC</td>
+                          <td class="table-assets__up">10.88</td>
+                          <td>27.2M</td>
+                          <td class="table-assets__down">12.28</td>
+                          <td>15.1M </td>
+                          <td class="table-assets__down">10.88</td>
+                          <td>15.1M</td>
+                          <td class="table-assets__down">10.88</td>
+                          <td>15.1M</td>
+                          <td class="table-assets__down">10.88</td>
+                          <td>15.1M</td>
+                        </tr>
+                        <tr>
+                          <td class="table-assets__name">BTT</td>
+                          <td class="table-assets__down">3.98</td>
+                          <td>29.5M</td>
+                          <td class="table-assets__down">10.88</td>
+                          <td>15.1M </td>
+                          <td class="table-assets__down">3.98</td>
+                          <td>15.1M </td>
+                          <td class="table-assets__down">3.98 </td>
+                          <td>15.1M </td>
+                          <td class="table-assets__down">3.98</td>
+                          <td>15.1M</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="tabs__item" id="volatile">Tab content 2</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-wrap mt-8"> 
+            <div class="col-1 inner-block p-inner"> 
+              <div class="flex-p-wrap"> 
+                <div class="col-auto"> <a class="btn btn__black w-140" href="#">Все сделки</a></div>
+                <div class="col-auto ml-auto"><a class="btn-r w-140" href="#">Прибильные<span class="btn__badge">5</span></a><a class="btn-r w-140 ml-8" href="#">Откуп готов</a></div>
+              </div>
+              <div class="portfolio-history">
+                <div class="portfolio-history__item">
+                  <div class="col-auto">
+                    <div class="flex-wrap">
+                      <div class="portfolio-history__lable">15 дней назад</div>
+                      <div class="portfolio-history__cont">
+                        <div class="coin-price">
+                          <div class="coin-price__num"> <span>0.92</span>1500</div>
+                          <div class="coin-price__name">
+                            <svg class="coin-price__icon icon icon--btc">
+                              <use xlink:href="img/svg-sprite.svg#btc"></use>
+                            </svg><span>BTC</span>
+                          </div>
+                        </div>
+                        <div class="portfolio-history__next-arrow">
+                          <svg class="coin-price__icon icon icon--next-arrow">
+                            <use xlink:href="img/svg-sprite.svg#next-arrow"></use>
+                          </svg>
+                        </div>
+                        <div class="coin-price coin-price--active">
+                          <div class="coin-price__num"> <span>0.92</span>1500</div>
+                          <div class="coin-price__name">
+                            <svg class="coin-price__icon icon icon--bch">
+                              <use xlink:href="img/svg-sprite.svg#bch"></use>
+                            </svg><span>BCH</span>
+                          </div>
+                        </div>
+                        <div class="coin-price">
+                          <div class="coin-price__num"> <span>0.92</span>1500</div>
+                          <div class="coin-price__name">
+                            <svg class="coin-price__icon icon icon--btc">
+                              <use xlink:href="img/svg-sprite.svg#btc"></use>
+                            </svg><span>BTC</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto ml-auto"><a class="btn btn__yellow btn__large fw-500" href="#">Откупить портфель на BTC 0.523</a></div>
+                </div>
+                <div class="portfolio-history__item">
+                  <div class="col-auto">
+                    <div class="flex-wrap">
+                      <div class="portfolio-history__lable">15 дней назад</div>
+                      <div class="portfolio-history__cont">
+                        <div class="coin-price">
+                          <div class="coin-price__num"> <span>0.92</span>1500</div>
+                          <div class="coin-price__name">
+                            <svg class="coin-price__icon icon icon--btc">
+                              <use xlink:href="img/svg-sprite.svg#btc"></use>
+                            </svg><span>BTC</span>
+                          </div>
+                        </div>
+                        <div class="portfolio-history__prev-arrow">
+                          <svg class="coin-price__icon icon icon--prev-arrow">
+                            <use xlink:href="img/svg-sprite.svg#prev-arrow"></use>
+                          </svg>
+                        </div>
+                        <div class="coin-price coin-price--active">
+                          <div class="coin-price__num"> <span>0.92</span>1500</div>
+                          <div class="coin-price__name">
+                            <svg class="coin-price__icon icon icon--bch">
+                              <use xlink:href="img/svg-sprite.svg#bch"></use>
+                            </svg><span>BCH</span>
+                          </div>
+                        </div>
+                        <div class="coin-price">
+                          <div class="coin-price__num"> <span>0.92</span>1500</div>
+                          <div class="coin-price__name">
+                            <svg class="coin-price__icon icon icon--btc">
+                              <use xlink:href="img/svg-sprite.svg#btc"></use>
+                            </svg><span>BTC</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto ml-auto"><a class="btn btn__black btn__large fw-500 opacity-0_2" href="#">Откупить портфель на BTC 0.523</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript" src="scripts/jquery.min.js"></script>
+      <script type="text/javascript" src="scripts/libs.min.js"></script>
+      <script type="text/javascript" src="scripts/main.js"></script>
+    </main>
+  </body>
+</html>

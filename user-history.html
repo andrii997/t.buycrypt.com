@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Coin History</title>
+    <link href="styles/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <main class="small-menu" id="main">
+      <header class="header" id="header"> 
+        <div class="flex-wrap">
+          <div class="col-auto">
+            <h3 class="header__h3">Welcome back, Kyrill</h3>
+            <h1 class="header__h1">Thanks for being with us.</h1>
+          </div>
+          <div class="col-auto ml-auto"><a class="header__message" href="chat.html">
+              <svg class="icon icon--message">
+                <use xlink:href="img/svg-sprite.svg#message"></use>
+              </svg></a>
+            <div class="header__notifications">
+              <div class="header__notifications--badge"></div>
+              <svg class="icon icon--notifications">
+                <use xlink:href="img/svg-sprite.svg#notifications"></use>
+              </svg>
+            </div>
+            <div class="header__user"><a class="header__user-avatar" href="" style="background-image:url('img/pic-8.jpg')"></a>
+              <div class="header__user-inner">
+                <div class="header__user--name">Kirill Moneylover</div>
+                <div class="header__user--date">Member since 2019</div>
+                <div class="header__user--icon">
+                  <svg class="icon icon--arrow-down">
+                    <use xlink:href="img/svg-sprite.svg#arrow-down"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="header__user-dropdown"> 
+                <div class="header__user-dropdown--inner">
+                  <div class="header__user-list">
+                    <div class="header__user-list-item"><a class="header__user-list-link" href="">Настройки</a></div>
+                    <div class="header__user-list-item"><a class="header__user-list-link" href="">Выход</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="flex-wrap">
+        <div class="aside">
+          <div class="menu menu__small">
+            <div class="menu__item"><a class="menu__link menu__link--active" href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--chart">
+                    <use xlink:href="img/svg-sprite.svg#chart"></use>
+                  </svg>
+                </div><span class="menu__item-name">History</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--statistics">
+                    <use xlink:href="img/svg-sprite.svg#statistics"></use>
+                  </svg>
+                </div><span class="menu__item-name">Trading</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--settings">
+                    <use xlink:href="img/svg-sprite.svg#settings"></use>
+                  </svg>
+                </div><span class="menu__item-name">Tasks</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--strategy">
+                    <use xlink:href="img/svg-sprite.svg#strategy"></use>
+                  </svg>
+                </div><span class="menu__item-name">Strategies</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--support">
+                    <use xlink:href="img/svg-sprite.svg#support"></use>
+                  </svg>
+                </div><span class="menu__item-name">Support</span></a></div>
+          </div>
+        </div>
+        <div class="content"> 
+          <div class="inner-block p-cont-3">
+            <div class="user-history__header"> 
+              <div class="category-title"> 
+                <div class="category-title__icon">
+                  <svg class="icon icon--chart">
+                    <use xlink:href="img/svg-sprite.svg#chart"></use>
+                  </svg>
+                </div>Asset <span>History</span>
+              </div>
+              <div class="user-history__header-inner"> 
+                <div class="btn-row-c">
+                  <div class="btn-row-c__item"><a class="btn-row-c__link" href="">7d</a></div>
+                  <div class="btn-row-c__item"><a class="btn-row-c__link btn-row-c__link--active" href="">1w</a></div>
+                  <div class="btn-row-c__item"><a class="btn-row-c__link" href="">1m</a></div>
+                  <div class="btn-row-c__item"><a class="btn-row-c__link" href="">3m</a></div>
+                </div>
+                <div class="category-title"> 
+                  <div class="category-title__icon">
+                    <svg class="icon icon--statistics-2">
+                      <use xlink:href="img/svg-sprite.svg#statistics-2"></use>
+                    </svg>
+                  </div>Your Score <span>Overall</span>
+                </div>
+              </div>
+              <div class="user-history__stat" style="background-image:url(img/pic-7.png)"></div>
+              <div class="flex-p-wrap">
+                <div class="col-1-3">
+                  <div class="flex-p-wrap"> 
+                    <div class="col-1-2">
+                      <div class="user-history__block user-history__block--large">
+                        <div class="category-title"> 
+                          <div class="category-title__icon">
+                            <svg class="icon icon--statistics-2">
+                              <use xlink:href="img/svg-sprite.svg#statistics-2"></use>
+                            </svg>
+                          </div>Your Score <span>Overall</span>
+                        </div>
+                        <div class="user-history__inf">
+                          <div class="user-history__inf-cont">
+                            <div class="user-history__inf-text">411<span>/1000</span></div>
+                          </div>
+                          <div class="user-history__inf-list">
+                            <div class="user-history__inf-item">Income</div>
+                            <div class="user-history__inf-item">Outcome</div>
+                            <div class="user-history__inf-item">Correlation</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-1-2">
+                      <div class="user-history__block user-history__block--large"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1-3">
+                  <div class="user-history__block pl-0 pr-0">
+                    <div class="flex-p-wrap"> 
+                      <div class="col-1-2">
+                        <div class="user-stat">
+                          <div class="user-stat__name">Анализируемая биржа</div>
+                          <div class="col-auto ml-auto">
+                            <div class="user-stat__icon-w">
+                              <svg class="icon icon--btc">
+                                <use xlink:href="img/svg-sprite.svg#btc"></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-1-2">
+                        <div class="user-stat">
+                          <div class="user-stat__name">Всего <br> сделок</div>
+                          <div class="col-auto ml-auto"> 
+                            <div class="user-stat__num">35+</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex-p-wrap"> 
+                    <div class="col-1-2">
+                      <div class="user-history__block pl-0 pr-0">
+                        <div class="user-stat">
+                          <div class="user-stat__name">Топ <br> сделка в плюс</div>
+                          <div class="col-auto ml-auto"> 
+                            <div class="user-stat__num text-green">+0.2</div>
+                            <div class="user-stat__icon">
+                              <svg class="icon icon--btc">
+                                <use xlink:href="img/svg-sprite.svg#btc"></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-1-2">
+                      <div class="user-history__block pl-0 pr-0">
+                        <div class="user-stat">
+                          <div class="user-stat__name">Топ <br> сделка в плюс</div>
+                          <div class="col-auto ml-auto"> 
+                            <div class="user-stat__num text-red">-0.2</div>
+                            <div class="user-stat__icon">
+                              <svg class="icon icon--litecoin">
+                                <use xlink:href="img/svg-sprite.svg#litecoin"></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-1-2">
+                      <div class="user-history__block pl-0 pr-0">
+                        <div class="user-stat">
+                          <div class="user-stat__name">Непроданных раз <br> на пампе</div>
+                          <div class="col-auto ml-auto"> 
+                            <div class="user-stat__num">35+</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-1-2">
+                      <div class="user-history__block pl-0 pr-0">
+                        <div class="user-stat">
+                          <div class="user-stat__name">Всего потрачено  <br> комиссиии</div>
+                          <div class="col-auto ml-auto"> 
+                            <div class="user-stat__num">0.2</div>
+                            <div class="user-stat__icon">
+                              <svg class="icon icon--btc">
+                                <use xlink:href="img/svg-sprite.svg#btc"></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-1-2">
+                      <div class="user-history__block"></div>
+                    </div>
+                    <div class="col-1-2">
+                      <div class="user-history__block"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1-3 user-cong">
+                  <div class="firework-rocket">
+                    <svg class="firework-rocket__svg">
+                      <use xlink:href="img/svg-sprite.svg#firework-rocket"></use>
+                    </svg>
+                    <div class="firework-rocket__flames">
+                      <div class="firework-rocket__flame-position">
+                        <div class="firework-rocket__flame firework-rocket__flame--1 animate-flame"></div>
+                      </div>
+                      <div class="firework-rocket__flame-position">
+                        <div class="firework-rocket__flame firework-rocket__flame--2 animate-flame"></div>
+                      </div>
+                      <div class="firework-rocket__flame-position">
+                        <div class="firework-rocket__flame firework-rocket__flame--3 animate-flame"></div>
+                      </div>
+                      <div class="firework-rocket__flame-position">
+                        <div class="firework-rocket__flame firework-rocket__flame--4 animate-flame"></div>
+                      </div>
+                      <div class="firework-rocket__flame-position">
+                        <div class="firework-rocket__flame firework-rocket__flame--5 animate-flame"></div>
+                      </div>
+                    </div>
+                    <div class="firework-rocket__stars">
+                      <div class="firework-rocket__star firework-rocket__star--1 animate-flame-star">
+                        <svg class="svg-firework-star__svg">
+                          <use xlink:href="img/svg-sprite.svg#firework-star"></use>
+                        </svg>
+                      </div>
+                      <div class="firework-rocket__star firework-rocket__star--2 animate-flame-star">
+                        <svg class="svg-firework-star__svg">
+                          <use xlink:href="img/svg-sprite.svg#firework-star"></use>
+                        </svg>
+                      </div>
+                      <div class="firework-rocket__star firework-rocket__star--3 animate-flame-star">
+                        <svg class="svg-firework-star__svg">
+                          <use xlink:href="img/svg-sprite.svg#firework-star"></use>
+                        </svg>
+                      </div>
+                      <div class="firework-rocket__star firework-rocket__star--4 animate-flame-star">
+                        <svg class="svg-firework-star__svg">
+                          <use xlink:href="img/svg-sprite.svg#firework-star"></use>
+                        </svg>
+                      </div>
+                      <div class="firework-rocket__star firework-rocket__star--5 animate-flame-star">
+                        <svg class="svg-firework-star__svg">
+                          <use xlink:href="img/svg-sprite.svg#firework-star"></use>
+                        </svg>
+                      </div>
+                      <div class="firework-rocket__star firework-rocket__star--6 animate-flame-star">
+                        <svg class="svg-firework-star__svg">
+                          <use xlink:href="img/svg-sprite.svg#firework-star"></use>
+                        </svg>
+                      </div>
+                      <div class="firework-rocket__star firework-rocket__star--7 animate-flame-star">
+                        <svg class="svg-firework-star__svg">
+                          <use xlink:href="img/svg-sprite.svg#firework-star"></use>
+                        </svg>
+                      </div>
+                      <div class="firework-rocket__star firework-rocket__star--8 animate-flame-star">
+                        <svg class="svg-firework-star__svg">
+                          <use xlink:href="img/svg-sprite.svg#firework-star"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="user-cong__title">Сongratulations!</div>
+                  <div class="user-cong__text">Wheels come in many variations that <br> affect grip, top speed, cryptocurrency!</div>
+                  <div class="text-center"> <a class="btn btn__blue-2 btn__large modal-btn" href="#api-code">Submit</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="api-code"> 
+          <div class="modal__title">Need your API Code</div>
+          <div class="modal__text">Wheels come in many variations that affect <br> grip, top speed, cryptocurrency!</div>
+          <div class="form-row form-row__icon">
+            <svg class="icon icon--btc">
+              <use xlink:href="img/svg-sprite.svg#btc"></use>
+            </svg>
+            <input class="form-row__input-lg" type="text">
+          </div>
+          <div class="form-row text-right"><a class="btn btn__gray btn__large mr-8 modal__btn-close" href="">close </a><a class="btn btn__blue-2 btn__large" href="">Copy code </a></div>
+          <div class="modal__footer">
+            API-код биржы можно найти в натсройках. <a href="">Смотри подробнее</a></div>
+        </div>
+      </div>
+      <script type="text/javascript" src="scripts/jquery.min.js"></script>
+      <script type="text/javascript" src="scripts/libs.min.js"></script>
+      <script type="text/javascript" src="scripts/main.js"></script>
+    </main>
+  </body>
+</html>

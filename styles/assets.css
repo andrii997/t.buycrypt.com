@@ -1,0 +1,88 @@
+* {
+	outline: none;
+}
+h1,h2,h3,h4,h5,h6,p {
+	margin: 0;
+	color: #fff;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+	margin: 0;
+}
+html {
+	scroll-behavior: smooth;
+}
+img {
+	vertical-align:bottom
+}
+body {
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+	background: #222D3E;
+	font-family: 'Roboto', sans-serif;
+	margin-bottom: 320px;
+}
+
+
+section {
+	padding-top: 55px;
+}
+
+/* Typography */
+
+h2 {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 40px;
+	letter-spacing: -0.01em;
+	margin-bottom: 30px;
+}
+
+.btn {
+	width: 100%;
+	border-radius: 8px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	padding: 17px 25px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12.5px;
+	line-height: 121.19%;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.btn.blue {
+	background: #439DFF;
+	box-sizing: border-box;
+}
+
+.btn.transparent {
+	border: 1px solid #439BFD;
+	box-sizing: border-box;
+}
+section > .descr {
+	font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #c3f382;
+    -webkit-background: linear-gradient(127.03deg, #FFFFFF -10.17%, #CBEF64 -10.16%, rgba(171, 255, 230, 0.99) 60.47%), #000000;
+    background: linear-gradient(127.03deg, #FFFFFF -10.17%, #CBEF64 -10.16%, rgba(171, 255, 230, 0.99) 60.47%), #000000;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+}

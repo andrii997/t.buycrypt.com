@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+    <link href="styles/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <main id="main">
+      <header class="header" id="header"> 
+        <div class="flex-wrap">
+          <div class="col-auto">
+            <h3 class="header__h3">Welcome </h3>
+            <h1 class="header__h1">Thanks for being with us.</h1>
+          </div>
+          <div class="col-auto ml-auto"><a class="header__message" href="chat.html">
+              <svg class="icon icon--message">
+                <use xlink:href="img/svg-sprite.svg#message"></use>
+              </svg></a>
+            <div class="header__notifications">
+              <div class="header__notifications--badge"></div>
+              <svg class="icon icon--notifications">
+                <use xlink:href="img/svg-sprite.svg#notifications"></use>
+              </svg>
+            </div>
+            <div class="header__login"><a class="header__login-btn" href="">Log in with Telegram</a></div>
+          </div>
+        </div>
+      </header>
+      <div class="flex-wrap">
+        <div class="aside">
+          <div class="menu">
+            <div class="menu__item"><a class="menu__link menu__link--active" href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--chart">
+                    <use xlink:href="img/svg-sprite.svg#chart"></use>
+                  </svg>
+                </div><span class="menu__item-name">History</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--statistics">
+                    <use xlink:href="img/svg-sprite.svg#statistics"></use>
+                  </svg>
+                </div><span class="menu__item-name">Trading</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--settings">
+                    <use xlink:href="img/svg-sprite.svg#settings"></use>
+                  </svg>
+                </div><span class="menu__item-name">Tasks</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--strategy">
+                    <use xlink:href="img/svg-sprite.svg#strategy"></use>
+                  </svg>
+                </div><span class="menu__item-name">Strategies</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--support">
+                    <use xlink:href="img/svg-sprite.svg#support"></use>
+                  </svg>
+                </div><span class="menu__item-name">Support</span></a></div>
+          </div>
+        </div>
+        <div class="content">
+          <h1>Typography</h1>
+          <div class="inner-block p-cont">
+            <div class="flex-p-wrap"> 
+              <div class="col-1-3">
+                <h1>h1 title </h1>
+                <h2>h2 title </h2>
+                <h3>h3 title </h3>
+              </div>
+              <div class="col-1-3">
+                <div class="text-blue">text color blue </div>
+                <div class="text-blue-2">text color blue 2</div>
+                <div class="text-green">text color green</div>
+                <div class="text-orange">text color orange </div>
+                <div class="text-black">text color black</div>
+                <div class="text-red">text color red</div>
+                <div class="text-yellow">text color yellow</div>
+              </div>
+              <div class="col-1-3">
+                <div class="fw-100">font weight 100</div>
+                <div class="fw-300">font weight 300</div>
+                <div class="fw-500">font weight 500</div>
+                <div class="fw-700">font weight 700 or bold</div>
+                <div class="fw-900">font weight 900</div>
+              </div>
+            </div>
+          </div>
+          <h1>All icons</h1>
+          <div class="flex-wrap">
+            <div class="col-1-3">
+              <table class="table">
+                <tr>
+                  <th>Class name</th>
+                  <th>Icon view</th>
+                </tr>
+                <tr>
+                  <td>.icon--checked</td>
+                  <td> 
+                    <svg class="icon icon--checked">
+                      <use xlink:href="img/svg-sprite.svg#checked"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td>.icon--arrow-down</td>
+                  <td> 
+                    <svg class="icon icon--arrow-down">
+                      <use xlink:href="img/svg-sprite.svg#arrow-down"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td>.icon--arrow-top</td>
+                  <td> 
+                    <svg class="icon icon--arrow-top">
+                      <use xlink:href="img/svg-sprite.svg#arrow-top"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td>.icon--arrow-right</td>
+                  <td> 
+                    <svg class="icon icon--arrow-right">
+                      <use xlink:href="img/svg-sprite.svg#arrow-right"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td>.icon--arrow-left</td>
+                  <td> 
+                    <svg class="icon icon--arrow-left">
+                      <use xlink:href="img/svg-sprite.svg#arrow-left"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td>.icon--notifications</td>
+                  <td>
+                    <svg class="icon icon--notifications">
+                      <use xlink:href="img/svg-sprite.svg#notifications"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td>.icon--message</td>
+                  <td>
+                    <svg class="icon icon--message">
+                      <use xlink:href="img/svg-sprite.svg#message"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr> 
+                  <td>.icon--chart</td>
+                  <td>
+                    <svg class="icon icon--chart">
+                      <use xlink:href="img/svg-sprite.svg#chart"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr> 
+                  <td>.icon--support</td>
+                  <td>
+                    <svg class="icon icon--support">
+                      <use xlink:href="img/svg-sprite.svg#support"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr> 
+                  <td>.icon--strategy</td>
+                  <td>
+                    <svg class="icon icon--strategy">
+                      <use xlink:href="img/svg-sprite.svg#strategy"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr> 
+                  <td>.icon--statistics</td>
+                  <td>
+                    <svg class="icon icon--statistics">
+                      <use xlink:href="img/svg-sprite.svg#statistics"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr> 
+                  <td>.icon--settings</td>
+                  <td>
+                    <svg class="icon icon--settings">
+                      <use xlink:href="img/svg-sprite.svg#settings"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr> 
+                  <td>.icon--next-arrow</td>
+                  <td>
+                    <svg class="icon icon--next-arrow">
+                      <use xlink:href="img/svg-sprite.svg#next-arrow"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr> 
+                  <td>.icon--man-user</td>
+                  <td>
+                    <svg class="icon icon--man-user">
+                      <use xlink:href="img/svg-sprite.svg#man-user"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr> 
+                  <td>.icon--send</td>
+                  <td>
+                    <svg class="icon icon--send">
+                      <use xlink:href="img/svg-sprite.svg#send"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr> 
+                  <td>.icon--verified</td>
+                  <td>
+                    <svg class="icon icon--verified">
+                      <use xlink:href="img/svg-sprite.svg#verified"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr> 
+                  <td>.icon--remove</td>
+                  <td>
+                    <svg class="icon icon--remove">
+                      <use xlink:href="img/svg-sprite.svg#remove"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr> 
+                  <td>.icon--time</td>
+                  <td>
+                    <svg class="icon icon--time">
+                      <use xlink:href="img/svg-sprite.svg#time"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr> 
+                  <td>.icon--calendar</td>
+                  <td>
+                    <svg class="icon icon--calendar">
+                      <use xlink:href="img/svg-sprite.svg#calendar"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr> 
+                  <td>.icon--location</td>
+                  <td>
+                    <svg class="icon icon--location">
+                      <use xlink:href="img/svg-sprite.svg#location"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr> 
+                  <td>.icon--global</td>
+                  <td>
+                    <svg class="icon icon--global">
+                      <use xlink:href="img/svg-sprite.svg#global"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr> 
+                  <td>.icon--telegram</td>
+                  <td>
+                    <svg class="icon icon--telegram">
+                      <use xlink:href="img/svg-sprite.svg#telegram"></use>
+                    </svg>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="col-1-3">
+              <table class="table">
+                <tr>
+                  <th>Class name</th>
+                  <th>Icon view</th>
+                </tr>
+                <tr> 
+                  <td>.icon--btc</td>
+                  <td>
+                    <svg class="icon icon--btc">
+                      <use xlink:href="img/svg-sprite.svg#btc"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr> 
+                  <td>.icon--bch</td>
+                  <td>
+                    <svg class="icon icon--bch">
+                      <use xlink:href="img/svg-sprite.svg#bch"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr> 
+                  <td>.icon--binance</td>
+                  <td>
+                    <svg class="icon icon--binance">
+                      <use xlink:href="img/svg-sprite.svg#binance"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr> 
+                  <td>.icon--litecoin</td>
+                  <td>
+                    <svg class="icon icon--litecoin">
+                      <use xlink:href="img/svg-sprite.svg#litecoin"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr> 
+                  <td>.icon--ethereum</td>
+                  <td>
+                    <svg class="icon icon--ethereum">
+                      <use xlink:href="img/svg-sprite.svg#ethereum"></use>
+                    </svg>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <h1>Form styler </h1>
+          <div class="flex-p-wrap"> 
+            <div class="col-1-4"> 
+              <div class="form-row"> 
+                <label class="form-row__label">Селект обыкновенный</label>
+                <select class="select-styler">
+                  <option>Binance</option>
+                  <option>Binance 2</option>
+                  <option>Binance 3</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-1-4">
+              <div class="form-row"> 
+                <label class="form-row__label">Селекс с иконкой</label>
+                <select class="select-icon">
+                  <option data-icon="binance">Binance</option>
+                  <option data-icon="litecoin">Litecoin</option>
+                  <option data-icon="binance">Binance 3</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <h1>Blocks container </h1>
+          <div class="inner-block p-cont">Color container</div>
+          <h1>Tabs</h1>
+          <div class="flex-wrap">
+            <div class="col-1-3">
+              <div class="tabs">
+                <div class="tabs__list"> 
+                  <div class="tabs__list-item tabs__list-item--active" data-tab="#tab-1">Tab item 1</div>
+                  <div class="tabs__list-item" data-tab="#tab-2">Tab item 2</div>
+                </div>
+                <div class="tabs__cont">
+                  <div class="tabs__item tabs__item--active" id="tab-1">Tab content 1</div>
+                  <div class="tabs__item" id="tab-2">Tab content 2</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-1-3">
+              <label class="form-row__label">Ваши активы</label>
+              <div class="tabs tabs__assets">
+                <div class="tabs__list flex-wrap">
+                  <div class="col-1-2">
+                    <div class="tabs__list-item tabs__list-item--active" data-tab="#assets-btc"> 
+                      <div class="coin-price">
+                        <div class="coin-price__num"> <span>0.92</span>1500</div>
+                        <div class="coin-price__name">
+                          <svg class="coin-price__icon icon icon--btc">
+                            <use xlink:href="img/svg-sprite.svg#btc"></use>
+                          </svg><span>BTC</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-1-2">
+                    <div class="tabs__list-item" data-tab="#assets-bch"> 
+                      <div class="coin-price">
+                        <div class="coin-price__num"> <span>0.32</span>1500</div>
+                        <div class="coin-price__name">
+                          <svg class="coin-price__icon icon icon--bch">
+                            <use xlink:href="img/svg-sprite.svg#bch"></use>
+                          </svg><span>BCH</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__cont">
+                  <div class="tabs__item tabs__item--active" id="assets-btc"> 
+                    <select class="select-coin">
+                      <option data-coin="btc" data-icon="btc" data-num="&lt;span&gt;0.32&lt;/span&gt;1500"> </option>
+                      <option data-coin="bch" data-icon="bch" data-num="&lt;span&gt;0.92&lt;/span&gt;1500"></option>
+                    </select>
+                  </div>
+                  <div class="tabs__item" id="assets-bch"> 
+                    <select class="select-coin">
+                      <option data-coin="bch" data-icon="bch" data-num="&lt;span&gt;0.92&lt;/span&gt;1500"></option>
+                      <option data-coin="btc" data-icon="btc" data-num="&lt;span&gt;0.32&lt;/span&gt;1500"> </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2>Numbers </h2>
+          <div class="inner-block p-cont">
+            <div class="flex-p-wrap"> 
+              <div class="col-1-4">
+                <div class="form-row"> 
+                  <label class="form-row__label">Number</label>
+                  <div class="spinner flex-wrap">
+                    <div class="col-auto mr-auto"><a class="spinner__btn spinner__btn--minus" href=""></a></div>
+                    <div class="col"> 
+                      <div class="spinner__cont">
+                        <input class="spinner__input" type="text" value="3%">
+                      </div>
+                    </div>
+                    <div class="col-auto"><a class="spinner__btn spinner__btn--pluse" href=""></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-1-4">
+                <div class="form-row"> 
+                  <label class="form-row__label">Number with icon coin</label>
+                  <div class="spinner flex-wrap">
+                    <div class="col-auto mr-auto"><a class="spinner__btn spinner__btn--minus" href=""></a></div>
+                    <div class="col"> 
+                      <div class="spinner__cont">
+                        <div class="flex-wrap"> 
+                          <div class="col-1-2 text-center">
+                            <input class="spinner__input spinner__input--num" type="text" value="0.33">
+                          </div>
+                          <div class="col-1-2 text-center">
+                            <svg class="spinner__icon icon icon--bch">
+                              <use xlink:href="img/svg-sprite.svg#bch"></use>
+                            </svg>
+                            <div class="spinner__coin">bth</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto"><a class="spinner__btn spinner__btn--pluse" href=""></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-1-4">
+                <div class="form-row">
+                  <label class="form-row__label">Number </label>
+                  <div class="spinner-v"> <a class="spinner-v__btn spinner-v__btn--up" href=""></a><a class="spinner-v__btn spinner-v__btn--down" href=""></a>
+                    <div class="spinner-v__num">0.31<span>150</span></div>
+                    <div class="spinner-v__percent">-17%</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-1-4">
+                <div class="form-row">
+                  <label class="form-row__label">Number</label>
+                  <div class="spinner-v"> <a class="spinner-v__btn spinner-v__btn--up" href=""></a><a class="spinner-v__btn spinner-v__btn--down" href=""></a>
+                    <div class="spinner-v__num text-blue-2">-13%  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-1-4">
+                <div class="form-row">
+                  <label class="form-row__label">Number</label>
+                  <div class="spinner-small"><a class="spinner-small__btn spinner-small__btn--up" href=""></a><a class="spinner-small__btn spinner-small__btn--down" href=""></a>
+                    <div class="spinner-small__num"> 7 decimals</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2>Buttons</h2>
+          <div class="inner-block p-cont">
+            <div class="flex-p-wrap">
+              <div class="col-1-4">
+                <div class="form-row"><a class="btn btn__mega" href="#">Button xxl</a></div>
+                <div class="form-row"><a class="btn btn__mega" href="#">Button mega</a></div>
+                <div class="form-row"><a class="btn btn__large" href="#">Button large</a></div>
+                <div class="form-row"><a class="btn" href="#">Button default </a></div>
+                <div class="form-row"><a class="btn btn__small" href="#">Button small</a></div>
+                <div class="form-row"><a class="btn btn__mini" href="#">Button mini</a></div>
+              </div>
+              <div class="col-1-4">
+                <div class="form-row"><a class="btn btn__full" href="#">Button full width</a>
+                  <div class="btn-row">
+                    <div class="btn-row__item"><a class="btn btn__small" href="">25%</a></div>
+                    <div class="btn-row__item"><a class="btn btn__small" href="">50%</a></div>
+                    <div class="btn-row__item"><a class="btn btn__small" href="">75%</a></div>
+                    <div class="btn-row__item"><a class="btn btn__small" href="">100%</a></div>
+                  </div>
+                  <div class="btn-row">
+                    <div class="btn-row__item col-1-4"><a class="btn btn__small btn__full" href="">25%</a></div>
+                    <div class="btn-row__item col-1-4"><a class="btn btn__small btn__full" href="">50%</a></div>
+                    <div class="btn-row__item col-1-4"><a class="btn btn__small btn__full" href="">75%</a></div>
+                    <div class="btn-row__item col-1-4"><a class="btn btn__small btn__full" href="">100%</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-1-4">
+                <div class="form-row"> <a class="btn btn__blue-2" href="#">Button color blue 2</a></div>
+                <div class="form-row"> <a class="btn btn__blue" href="#">Button color blue</a></div>
+                <div class="form-row"> <a class="btn btn__green" href="#">Button color green</a></div>
+                <div class="form-row"> <a class="btn btn__red" href="#">Button color red</a></div>
+                <div class="form-row"> <a class="btn btn__yellow" href="#">Button color yellow</a></div>
+              </div>
+              <div class="col-1-4">
+                <div class="form-row"> <a class="btn-r" href="#">Button with border </a></div>
+                <div class="form-row"> <a class="btn-c" href="#">Button  </a></div>
+                <div class="form-row"> <a class="btn-c btn-c__white" href="#">Button  white</a></div>
+              </div>
+            </div>
+          </div>
+          <h2>Sliders</h2>
+          <div class="inner-block p-cont">
+            <div class="flex-p-wrap">
+              <div class="col-1-4">
+                <div class="form-row">
+                  <label class="form-row__label">Slider</label>
+                  <div class="slider" data-value="30"></div>
+                </div>
+              </div>
+              <div class="col-1-4">
+                <div class="form-row">
+                  <label class="form-row__label">Slider</label>
+                  <div class="slider slider__blue" data-value="50"></div>
+                </div>
+              </div>
+              <div class="col-1-4">
+                <div class="form-row">
+                  <label class="form-row__label">Slider</label>
+                  <div class="slider slider__red" data-value="50"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2>Checkbox </h2>
+          <div class="inner-block p-cont">
+            <div class="flex-p-wrap">
+              <div class="col-1-4">
+                <div class="form-row"> 
+                  <label class="form-row__label">Checkbox</label>
+                  <label class="checkbox"> 
+                    <div class="checkbox__inner">
+                      <input class="checkbox__inner-input" type="checkbox" checked>
+                      <div class="checkbox__inner-check">
+                        <svg class="icon icon--checked">
+                          <use xlink:href="img/svg-sprite.svg#checked"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="checkbox__text">Checkbox text</div>
+                  </label>
+                </div>
+                <div class="form-row"> 
+                  <label class="form-row__label">Checkbox</label>
+                  <label class="checkbox checkbox__red"> 
+                    <div class="checkbox__inner">
+                      <input class="checkbox__inner-input" type="checkbox" checked>
+                      <div class="checkbox__inner-check">
+                        <svg class="icon icon--checked">
+                          <use xlink:href="img/svg-sprite.svg#checked"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="checkbox__text">Checkbox text</div>
+                  </label>
+                </div>
+                <div class="form-row"> 
+                  <label class="form-row__label">Checkbox</label>
+                  <label class="checkbox checkbox__blue">
+                    <div class="checkbox__inner">
+                      <input class="checkbox__inner-input" type="checkbox" checked>
+                      <div class="checkbox__inner-check">
+                        <svg class="icon icon--checked">
+                          <use xlink:href="img/svg-sprite.svg#checked"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="checkbox__text">Checkbox text            </div>
+                  </label>
+                </div>
+              </div>
+              <div class="col-1-4">
+                <div class="swicher">
+                  <input class="swicher__input" type="checkbox">
+                  <div class="swicher__circle"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2>Rocket
+            <div class="inner-block p-cont">
+              <div class="flex-p-wrap">
+                <div class="col-1-4">
+                  <div class="firework-rocket">
+                    <svg class="firework-rocket__svg">
+                      <use xlink:href="img/svg-sprite.svg#firework-rocket"></use>
+                    </svg>
+                    <div class="firework-rocket__flames">
+                      <div class="firework-rocket__flame-position">
+                        <div class="firework-rocket__flame firework-rocket__flame--1 animate-flame"></div>
+                      </div>
+                      <div class="firework-rocket__flame-position">
+                        <div class="firework-rocket__flame firework-rocket__flame--2 animate-flame"></div>
+                      </div>
+                      <div class="firework-rocket__flame-position">
+                        <div class="firework-rocket__flame firework-rocket__flame--3 animate-flame"></div>
+                      </div>
+                      <div class="firework-rocket__flame-position">
+                        <div class="firework-rocket__flame firework-rocket__flame--4 animate-flame"></div>
+                      </div>
+                      <div class="firework-rocket__flame-position">
+                        <div class="firework-rocket__flame firework-rocket__flame--5 animate-flame"></div>
+                      </div>
+                    </div>
+                    <div class="firework-rocket__stars">
+                      <div class="firework-rocket__star firework-rocket__star--1 animate-flame-star">
+                        <svg class="svg-firework-star__svg">
+                          <use xlink:href="img/svg-sprite.svg#firework-star"></use>
+                        </svg>
+                      </div>
+                      <div class="firework-rocket__star firework-rocket__star--2 animate-flame-star">
+                        <svg class="svg-firework-star__svg">
+                          <use xlink:href="img/svg-sprite.svg#firework-star"></use>
+                        </svg>
+                      </div>
+                      <div class="firework-rocket__star firework-rocket__star--3 animate-flame-star">
+                        <svg class="svg-firework-star__svg">
+                          <use xlink:href="img/svg-sprite.svg#firework-star"></use>
+                        </svg>
+                      </div>
+                      <div class="firework-rocket__star firework-rocket__star--4 animate-flame-star">
+                        <svg class="svg-firework-star__svg">
+                          <use xlink:href="img/svg-sprite.svg#firework-star"></use>
+                        </svg>
+                      </div>
+                      <div class="firework-rocket__star firework-rocket__star--5 animate-flame-star">
+                        <svg class="svg-firework-star__svg">
+                          <use xlink:href="img/svg-sprite.svg#firework-star"></use>
+                        </svg>
+                      </div>
+                      <div class="firework-rocket__star firework-rocket__star--6 animate-flame-star">
+                        <svg class="svg-firework-star__svg">
+                          <use xlink:href="img/svg-sprite.svg#firework-star"></use>
+                        </svg>
+                      </div>
+                      <div class="firework-rocket__star firework-rocket__star--7 animate-flame-star">
+                        <svg class="svg-firework-star__svg">
+                          <use xlink:href="img/svg-sprite.svg#firework-star"></use>
+                        </svg>
+                      </div>
+                      <div class="firework-rocket__star firework-rocket__star--8 animate-flame-star">
+                        <svg class="svg-firework-star__svg">
+                          <use xlink:href="img/svg-sprite.svg#firework-star"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </h2>
+        </div>
+      </div>
+      <script type="text/javascript" src="scripts/jquery.min.js"></script>
+      <script type="text/javascript" src="scripts/libs.min.js"></script>
+      <script type="text/javascript" src="scripts/main.js"></script>
+    </main>
+  </body>
+</html>

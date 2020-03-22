@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+    <link href="styles/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="overlay">     </div>
+    <div class="bidding"> 
+      <div class="bidding__header flex-wrap"> 
+        <div class="col-auto"> 
+          <div class="bidding__header-select">
+            <select class="select-icon w-140">
+              <option data-icon="binance">Binance</option>
+              <option data-icon="litecoin">Litecoin</option>
+              <option data-icon="binance">Binance 3</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-auto ml-auto">
+          <div class="flex-wrap">
+            <div class="bidding__info">
+              <div class="bidding__info-item">
+                <div class="bidding__info-name">Last Price</div>
+                <div class="bidding__info-text">0.00006870  <span class="text-yellow">$2.71</span></div>
+              </div>
+              <div class="bidding__info-item">
+                <div class="bidding__info-name">Last Price</div>
+                <div class="bidding__info-text">0.00006870  $2.71</div>
+              </div>
+              <div class="bidding__info-item">
+                <div class="bidding__info-name">24 High</div>
+                <div class="bidding__info-text">0.0006927</div>
+              </div>
+              <div class="bidding__info-item">
+                <div class="bidding__info-name">24 Volume</div>
+                <div class="bidding__info-text">239.55 BTC</div>
+              </div>
+            </div>
+            <div class="bidding__header-select">
+              <select class="select-styler">
+                <option>ENJ / BTC</option>
+                <option>ENJ / BTC</option>
+                <option>ENJ / BTC</option>
+              </select>
+            </div>
+            <div class="bidding__col text-right">
+              <div class="header__message">
+                <svg class="icon icon--message">
+                  <use xlink:href="img/svg-sprite.svg#message"></use>
+                </svg>
+              </div>
+              <div class="header__notifications">
+                <div class="header__notifications--badge"></div>
+                <svg class="icon icon--notifications">
+                  <use xlink:href="img/svg-sprite.svg#notifications"></use>
+                </svg>
+              </div>
+              <div class="header__user">
+                <div class="header__user-inner">
+                  <div class="header__user--name">Kirill Moneylover</div>
+                  <div class="header__user--date">Member since 2019</div>
+                  <div class="header__user--icon">
+                    <svg class="icon icon--arrow-down">
+                      <use xlink:href="img/svg-sprite.svg#arrow-down"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="header__user-dropdown"> 
+                  <div class="header__user-dropdown--inner">Dropdown content</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bidding__cont"> 
+        <div class="flex-wrap"> 
+          <div class="col"> 
+            <div class="inner-block">
+              <div class="bidding-set-h">
+                <div class="flex-p-wrap">
+                  <div class="col-auto"> 
+                    <div class="btn-row">
+                      <div class="btn-row__item">
+                        <div class="btn btn__small btn__block">time</div>
+                      </div>
+                      <div class="btn-row__item"><a class="btn btn__small btn--sel" href="">15m</a></div>
+                      <div class="btn-row__item"><a class="btn btn__small" href="">1H</a></div>
+                      <div class="btn-row__item"><a class="btn btn__small" href="">1D</a></div>
+                      <div class="btn-row__item"><a class="btn btn__small" href="">1W</a></div>
+                      <div class="btn-row__item"><a class="btn btn__small" href="">1M</a></div>
+                      <div class="btn-row__item"><a class="btn btn__small" href="">Tools</a></div>
+                      <div class="btn-row__item"><a class="btn btn__small" href="">Indicators</a></div>
+                      <div class="btn-row__item">
+                        <div class="btn-row__tag">MACD<a class="btn-row__tag-remove" href="#"> 
+                            <svg class="icon icon--remove">
+                              <use xlink:href="img/svg-sprite.svg#remove"></use>
+                            </svg></a></div>
+                      </div>
+                      <div class="btn-row__item">
+                        <div class="btn-row__tag">MA<a class="btn-row__tag-remove" href="#"> 
+                            <svg class="icon icon--remove">
+                              <use xlink:href="img/svg-sprite.svg#remove"></use>
+                            </svg></a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto ml-auto">
+                    <div class="btn-row">
+                      <div class="btn-row__item"><a class="btn btn__small btn--sel" href="">Original</a></div>
+                      <div class="btn-row__item"><a class="btn btn__small" href="">TradingView</a></div>
+                      <div class="btn-row__item"><a class="btn btn__small" href="">Depth</a></div>
+                      <div class="btn-row__item"><a class="btn btn__small btn__small--icon" href=""> 
+                          <svg class="icon icon--fullscreen">
+                            <use xlink:href="img/svg-sprite.svg#fullscreen"></use>
+                          </svg></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style="background:url(img/pic-3.jpg) no-repeat center;background-size: auto 100%;height: 560px;"></div>
+              <div class="bidding__info-cont">
+                <div class="bidding-set-h">
+                  <div class="flex-p-wrap">
+                    <div class="col-auto"> 
+                      <div class="btn-row">
+                        <div class="btn-row__item"><a class="btn btn__small btn--sel" href="">Open Orders (1)</a></div>
+                        <div class="btn-row__item"><a class="btn btn__small" href="">Order History</a></div>
+                        <div class="btn-row__item"><a class="btn btn__small" href="">Trade History</a></div>
+                        <div class="btn-row__item"><a class="btn btn__small" href="">Funds</a></div>
+                      </div>
+                    </div>
+                    <div class="col-auto ml-auto"><a class="btn btn__small btn__link" href="">Hide Other Pairs</a></div>
+                  </div>
+                </div>
+                <div class="table-info-d__scroll mCustomScrollbar">
+                  <table class="table-info-d">
+                    <tr>
+                      <th>Date</th>
+                      <th>Pair</th>
+                      <th>Type</th>
+                      <th class="text-center">Side</th>
+                      <th>Price</th>
+                      <th class="text-center">Amount</th>
+                      <th class="text-center">Filled %</th>
+                      <th class="text-right">Total</th>
+                      <th class="text-right">Trigger Co...</th>
+                      <th class="text-center" width="80px"> 
+                        <select class="select-styler select-styler__small">
+                          <option>Cancel All</option>
+                          <option>Cancel Last </option>
+                        </select>
+                      </th>
+                    </tr>
+                    <tr> 
+                      <td>03-18 15:54</td>
+                      <td>WAVES/US</td>
+                      <td>Limit</td>
+                      <td class="text-center text-red">Sell</td>
+                      <td>2.90000</td>
+                      <td class="text-center">2,011.18</td>
+                      <td class="text-center">0.00%</td>
+                      <td class="text-right">5,823.4220 USDT</td>
+                      <td>-</td>
+                      <td class="text-center"><a class="btn btn__small" href="">Cancel</a></td>
+                    </tr>
+                    <tr> 
+                      <td>03-18 15:54</td>
+                      <td>WAVES/US</td>
+                      <td>Limit</td>
+                      <td class="text-center text-green">Sell</td>
+                      <td>2.90000</td>
+                      <td class="text-center">2,011.18</td>
+                      <td class="text-center">0.00%</td>
+                      <td class="text-right">5,823.4220 USDT</td>
+                      <td>-</td>
+                      <td class="text-center"><a class="btn btn__small" href="">Cancel</a></td>
+                    </tr>
+                    <tr> 
+                      <td>03-18 15:54</td>
+                      <td>WAVES/US</td>
+                      <td>Limit</td>
+                      <td class="text-center text-red">Sell</td>
+                      <td>2.90000</td>
+                      <td class="text-center">2,011.18</td>
+                      <td class="text-center">0.00%</td>
+                      <td class="text-right">5,823.4220 USDT</td>
+                      <td>-</td>
+                      <td class="text-center"><a class="btn btn__small" href="">Cancel</a></td>
+                    </tr>
+                    <tr> 
+                      <td>03-18 15:54</td>
+                      <td>WAVES/US</td>
+                      <td>Limit</td>
+                      <td class="text-center text-green">Sell</td>
+                      <td>2.90000</td>
+                      <td class="text-center">2,011.18</td>
+                      <td class="text-center">0.00%</td>
+                      <td class="text-right">5,823.4220 USDT</td>
+                      <td>-</td>
+                      <td class="text-center"><a class="btn btn__small" href="">Cancel</a></td>
+                      <tr> 
+                        <td>03-18 15:54</td>
+                        <td>WAVES/US</td>
+                        <td>Limit</td>
+                        <td class="text-center text-red">Sell</td>
+                        <td>2.90000</td>
+                        <td class="text-center">2,011.18</td>
+                        <td class="text-center">0.00%</td>
+                        <td class="text-right">5,823.4220 USDT</td>
+                        <td>-</td>
+                        <td class="text-center"><a class="btn btn__small" href="">Cancel</a></td>
+                      </tr>
+                      <tr> 
+                        <td>03-18 15:54</td>
+                        <td>WAVES/US</td>
+                        <td>Limit</td>
+                        <td class="text-center text-green">Sell</td>
+                        <td>2.90000</td>
+                        <td class="text-center">2,011.18</td>
+                        <td class="text-center">0.00%</td>
+                        <td class="text-right">5,823.4220 USDT</td>
+                        <td>-</td>
+                        <td class="text-center"><a class="btn btn__small" href="">Cancel</a></td>
+                      </tr>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bidding__col-2">
+            <div class="flex-p-wrap">
+              <div class="col-1-2">
+                <div class="inner-block">
+                  <div class="bidding-set-h"> 
+                    <div class="flex-p-wrap">
+                      <div class="col-auto">
+                        <div class="btn-row">
+                          <div class="btn-row__item"><a class="btn btn__small" href="">25%</a></div>
+                          <div class="btn-row__item"><a class="btn btn__small" href="">50%</a></div>
+                          <div class="btn-row__item"><a class="btn btn__small" href="">75%</a></div>
+                        </div>
+                      </div>
+                      <div class="col-auto ml-auto">
+                        <div class="bidding-set-h__text">groups</div>
+                        <div class="spinner-small"><a class="spinner-small__btn spinner-small__btn--up" href=""></a><a class="spinner-small__btn spinner-small__btn--down" href=""></a>
+                          <input class="spinner-small__input" type="text" value="7 decimals">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bidding__table">
+                    <div class="bidding__table-tr">
+                      <div class="bidding__table-th">Price (BTC)</div>
+                      <div class="bidding__table-th">Amount(WAVES)</div>
+                      <div class="bidding__table-th">Total(BTC)</div>
+                    </div>
+                    <div class="bidding__table-tr">
+                      <div class="bidding__table-td text-red">0.0006803</div>
+                      <div class="bidding__table-td">1,390.19</div>
+                      <div class="bidding__table-td">0.0006803</div>
+                      <div class="bidding__table-preload-red" style="width:60%"></div>
+                    </div>
+                    <div class="bidding__table-tr">
+                      <div class="bidding__table-td text-red">0.0006803</div>
+                      <div class="bidding__table-td">181.46</div>
+                      <div class="bidding__table-td">0.0006803</div>
+                      <div class="bidding__table-preload-red" style="width:70%"></div>
+                    </div>
+                    <div class="bidding__table-tr">
+                      <div class="bidding__table-td text-red">0.0006802</div>
+                      <div class="bidding__table-td">16.00</div>
+                      <div class="bidding__table-td">0.0006803</div>
+                      <div class="bidding__table-preload-red" style="width:20%"></div>
+                    </div>
+                    <div class="bidding__table-tr">
+                      <div class="bidding__table-td text-red">0.0006802</div>
+                      <div class="bidding__table-td">90.60</div>
+                      <div class="bidding__table-td">0.0006803</div>
+                      <div class="bidding__table-preload-red" style="width:50%"></div>
+                    </div>
+                    <div class="bidding__table-tr">
+                      <div class="bidding__table-td text-red">0.0006802</div>
+                      <div class="bidding__table-td">715.77</div>
+                      <div class="bidding__table-td">0.0006803</div>
+                      <div class="bidding__table-preload-red" style="width:65%"></div>
+                    </div>
+                    <div class="bidding__table-tr">
+                      <div class="bidding__table-td text-red">0.0006802</div>
+                      <div class="bidding__table-td">983.45</div>
+                      <div class="bidding__table-td">0.0006803</div>
+                      <div class="bidding__table-preload-red" style="width:58%"></div>
+                    </div>
+                    <div class="bidding__table-tr">
+                      <div class="bidding__table-td text-red">0.0006802</div>
+                      <div class="bidding__table-td">60.00</div>
+                      <div class="bidding__table-td">0.0006803</div>
+                      <div class="bidding__table-preload-red" style="width:80%"></div>
+                    </div>
+                    <div class="bidding__table-tr">
+                      <div class="bidding__table-td text-red">0.0006802</div>
+                      <div class="bidding__table-td">1,9878.66</div>
+                      <div class="bidding__table-td">0.0006803</div>
+                      <div class="bidding__table-preload-red" style="width:90%"></div>
+                    </div>
+                    <div class="bidding__table-tr">
+                      <div class="bidding__table-td text-red">0.0006802</div>
+                      <div class="bidding__table-td">20.5816.00</div>
+                      <div class="bidding__table-td">0.0006803</div>
+                      <div class="bidding__table-preload-red" style="width:10%"></div>
+                    </div>
+                    <div class="bidding__table-tr">
+                      <div class="bidding__table-td text-red">0.0006802</div>
+                      <div class="bidding__table-td">341.</div>
+                      <div class="bidding__table-td">0.0006803</div>
+                      <div class="bidding__table-preload-red" style="width:30%"></div>
+                    </div>
+                  </div>
+                  <div class="bidding__best">0.00068807<span class="bidding__best-price">$2.71</span>
+                    <div class="bidding__best-load load-status">
+                      <div class="load-status">
+                        <div class="load-status__item load-status__item--active"></div>
+                        <div class="load-status__item load-status__item--active"></div>
+                        <div class="load-status__item load-status__item--active"></div>
+                        <div class="load-status__item"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bidding__table">
+                    <div class="bidding__table-tr">
+                      <div class="bidding__table-td text-green">0.0006803</div>
+                      <div class="bidding__table-td">1,390.19</div>
+                      <div class="bidding__table-td">0.0006803</div>
+                      <div class="bidding__table-preload-green" style="width:60%"></div>
+                    </div>
+                    <div class="bidding__table-tr">
+                      <div class="bidding__table-td text-green">0.0006803</div>
+                      <div class="bidding__table-td">181.46</div>
+                      <div class="bidding__table-td">0.0006803</div>
+                      <div class="bidding__table-preload-green" style="width:70%"></div>
+                    </div>
+                    <div class="bidding__table-tr">
+                      <div class="bidding__table-td text-green">0.0006802</div>
+                      <div class="bidding__table-td">16.00</div>
+                      <div class="bidding__table-td">0.0006803</div>
+                      <div class="bidding__table-preload-green" style="width:20%"></div>
+                    </div>
+                    <div class="bidding__table-tr">
+                      <div class="bidding__table-td text-green">0.0006802</div>
+                      <div class="bidding__table-td">90.60</div>
+                      <div class="bidding__table-td">0.0006803</div>
+                      <div class="bidding__table-preload-green" style="width:50%"></div>
+                    </div>
+                    <div class="bidding__table-tr">
+                      <div class="bidding__table-td text-green">0.0006802</div>
+                      <div class="bidding__table-td">715.77</div>
+                      <div class="bidding__table-td">0.0006803</div>
+                      <div class="bidding__table-preload-green" style="width:65%"></div>
+                    </div>
+                    <div class="bidding__table-tr">
+                      <div class="bidding__table-td text-green">0.0006802</div>
+                      <div class="bidding__table-td">983.45</div>
+                      <div class="bidding__table-td">0.0006803</div>
+                      <div class="bidding__table-preload-green" style="width:58%"></div>
+                    </div>
+                    <div class="bidding__table-tr">
+                      <div class="bidding__table-td text-green">0.0006802</div>
+                      <div class="bidding__table-td">60.00</div>
+                      <div class="bidding__table-td">0.0006803</div>
+                      <div class="bidding__table-preload-green" style="width:80%"></div>
+                    </div>
+                    <div class="bidding__table-tr">
+                      <div class="bidding__table-td text-green">0.0006802</div>
+                      <div class="bidding__table-td">1,9878.66</div>
+                      <div class="bidding__table-td">0.0006803</div>
+                      <div class="bidding__table-preload-green" style="width:90%"></div>
+                    </div>
+                    <div class="bidding__table-tr">
+                      <div class="bidding__table-td text-green">0.0006802</div>
+                      <div class="bidding__table-td">20.5816.00</div>
+                      <div class="bidding__table-td">0.0006803</div>
+                      <div class="bidding__table-preload-green" style="width:10%"></div>
+                    </div>
+                    <div class="bidding__table-tr">
+                      <div class="bidding__table-td text-green">0.0006802</div>
+                      <div class="bidding__table-td">341.</div>
+                      <div class="bidding__table-td">0.0006803</div>
+                      <div class="bidding__table-preload-green" style="width:30%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-1-2">
+                <div class="inner-block">
+                  <div class="tabs bidding__tabs-p">
+                    <div class="tabs__list tabs__list-btn">
+                      <div class="col-1-2 tabs__list-item tabs__list-item--active" data-tab="#by-price">По цене</div>
+                      <div class="col-1-2 tabs__list-item" data-tab="#by-volume">По объему</div>
+                    </div>
+                    <div class="tabs__cont">
+                      <div class="tabs__item tabs__item--active" id="by-price"> 
+                        <div class="p-15">
+                          <div class="form-row form-row__or">
+                            <label class="form-row__label">Пара</label>
+                            <div class="flex-p-wrap flex-p-def">
+                              <div class="col-1-2">
+                                <select class="select-icon">
+                                  <option data-icon="btc">BTC</option>
+                                  <option data-icon="litecoin">Litecoin</option>
+                                  <option data-icon="binance">Binance 3</option>
+                                </select>
+                              </div>
+                              <div class="col-1-2">
+                                <select class="select-icon">
+                                  <option data-icon="bch">BCH</option>
+                                  <option data-icon="litecoin">Litecoin</option>
+                                  <option data-icon="binance">Binance 3</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="flex-p-wrap flex-p-def mt-20">
+                            <div class="col-1-2">
+                              <div class="form-row">
+                                <div class="form-row__label">Текущая цена</div>
+                                <div class="form-row__price mt-15">132.32<span class="form-row__price--num">150 </span><span class="form-row__price--currency">ETH</span></div>
+                                <div class="form-row__val">2141.45 USD</div>
+                              </div>
+                            </div>
+                            <div class="col-1-2">
+                              <div class="form-row">
+                                <div class="form-row__label">Границы</div>
+                                <div class="form-row__scope mt-15 text-green">31.5 USD</div>
+                                <div class="form-row__scope text-red">21.5 USD</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="flex-p-wrap mt-20">
+                            <div class="col-1-2">
+                              <div class="form-row"> 
+                                <label class="form-row__label">Верхняя</label>
+                                <div class="flex-wrap">
+                                  <div class="form-row__check-inner">
+                                    <label class="checkbox"> 
+                                      <div class="checkbox__inner">
+                                        <input class="checkbox__inner-input" type="checkbox">
+                                        <div class="checkbox__inner-check">
+                                          <svg class="icon icon--checked">
+                                            <use xlink:href="img/svg-sprite.svg#checked"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                    </label>
+                                  </div>
+                                  <div class="col">
+                                    <div class="slider mt-10" data-value="40"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-1-2">
+                              <div class="form-row"> 
+                                <div class="spinner-v"> <a class="spinner-v__btn spinner-v__btn--up" href=""></a><a class="spinner-v__btn spinner-v__btn--down" href=""></a>
+                                  <div class="spinner-v__num text-green">33% </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="flex-p-wrap">
+                            <div class="col-1-2">
+                              <div class="form-row"> 
+                                <label class="form-row__label">Нижняя</label>
+                                <div class="flex-wrap">
+                                  <div class="form-row__check-inner">
+                                    <label class="checkbox checkbox__red">
+                                      <div class="checkbox__inner">
+                                        <input class="checkbox__inner-input" type="checkbox" checked>
+                                        <div class="checkbox__inner-check">
+                                          <svg class="icon icon--checked">
+                                            <use xlink:href="img/svg-sprite.svg#checked"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                    </label>
+                                  </div>
+                                  <div class="col">
+                                    <div class="slider slider__red mt-10" data-value="40"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-1-2">
+                              <div class="form-row"> 
+                                <div class="spinner-v"> <a class="spinner-v__btn spinner-v__btn--up" href=""></a><a class="spinner-v__btn spinner-v__btn--down" href=""></a>
+                                  <div class="spinner-v__num text-red">-13% </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-row mt-20">
+                            <button class="btn btn__blue btn__full btn__mega" type="submit">Submit</button>
+                          </div>
+                          <div class="coin-check pb-0 pt-15">
+                            <div class="coin-check__item mb-0">
+                              <div class="coin-check__coin">
+                                <svg class="icon icon--btc">
+                                  <use xlink:href="img/svg-sprite.svg#btc"></use>
+                                </svg>
+                              </div>
+                              <div class="coin-check__coin-old">
+                                <svg class="icon icon--bch">
+                                  <use xlink:href="img/svg-sprite.svg#bch"></use>
+                                </svg>
+                              </div><a class="coin-check__close" href="">
+                                <svg class="icon icon--remove">
+                                  <use xlink:href="img/svg-sprite.svg#remove"></use>
+                                </svg></a>
+                              <div class="flex-p-wrap">
+                                <div class="col-auto">
+                                  <div class="coin-check__name">ETH/BTC</div>
+                                  <div class="flex-wrap coin-check__price text-green">
+                                    <div class="coin-check__persent">+13%</div>
+                                    <div class="col">31.50000 USD</div>
+                                  </div>
+                                  <div class="flex-wrap coin-check__price text-red">
+                                    <div class="coin-check__persent">-5%</div>
+                                    <div class="col">21.5044 USD</div>
+                                  </div>
+                                </div>
+                                <div class="col-auto ml-auto">
+                                  <div class="swicher">
+                                    <input class="swicher__input" type="checkbox">
+                                    <div class="swicher__circle"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tabs__item" id="by-volume"> 
+                        <div class="p-inner">2</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tabs bidding__tabs">
+              <div class="tabs__list"> 
+                <div class="tabs__list-item tabs__list-item--active" data-tab="#limit">Limit</div>
+                <div class="tabs__list-item" data-tab="#market">Market</div>
+                <div class="tabs__list-item" data-tab="#stop-limit">Stop-Limit</div>
+              </div>
+              <div class="tabs__cont">
+                <div class="tabs__item tabs__item--active" id="limit"> 
+                  <div class="flex-wrap flex-wrap__tabs">
+                    <div class="col-1-2"> 
+                      <div class="inner-block">
+                        <div class="form-row"> 
+                          <div class="flex-p-wrap"> 
+                            <div class="col-auto"> 
+                              <div class="form-row__title">Buy WAVES</div>
+                            </div>
+                            <div class="col-auto ml-auto">
+                              <label class="form-row__label"> BTC</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="flex-wrap"> 
+                            <div class="form-row__inline-label-s">Price:</div>
+                            <div class="form-row__inline-cont-s">
+                              <div class="form-row__name-option">BTC</div>
+                              <input class="form-row__input-s" type="text" value="0.00068000">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="flex-wrap"> 
+                            <div class="form-row__inline-label-s">Amount:</div>
+                            <div class="form-row__inline-cont-s">
+                              <div class="form-row__name-option">WAVES</div>
+                              <input class="form-row__input-s" type="text">
+                              <div class="btn-row">
+                                <div class="btn-row__item col-1-4"><a class="btn btn__full btn__small" href="">25%</a></div>
+                                <div class="btn-row__item col-1-4"><a class="btn btn__full btn__small" href="">50%</a></div>
+                                <div class="btn-row__item col-1-4"><a class="btn btn__full btn__small" href="">75%</a></div>
+                                <div class="btn-row__item col-1-4"><a class="btn btn__full btn__small" href="">100%</a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="flex-wrap"> 
+                            <div class="form-row__inline-label-s">Total:</div>
+                            <div class="form-row__inline-cont-s">
+                              <div class="form-row__name-option">BTC</div>
+                              <input class="form-row__input-s" type="text">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-row mt-15"><a class="btn btn__green btn__full" href="">Buy WAVES</a></div>
+                      </div>
+                    </div>
+                    <div class="col-1-2"> 
+                      <div class="inner-block">
+                        <div class="form-row"> 
+                          <div class="flex-p-wrap"> 
+                            <div class="col-auto"> 
+                              <div class="form-row__title">Sell WAVES</div>
+                            </div>
+                            <div class="col-auto ml-auto">
+                              <label class="form-row__label"> BTC</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="flex-wrap"> 
+                            <div class="form-row__inline-label-s">Price:</div>
+                            <div class="form-row__inline-cont-s">
+                              <div class="form-row__name-option">BTC</div>
+                              <input class="form-row__input-s" type="text" value="0.00068000">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="flex-wrap"> 
+                            <div class="form-row__inline-label-s">Amount:</div>
+                            <div class="form-row__inline-cont-s">
+                              <div class="form-row__name-option">WAVES</div>
+                              <input class="form-row__input-s" type="text">
+                              <div class="btn-row">
+                                <div class="btn-row__item col-1-4"><a class="btn btn__full btn__small" href="">25%</a></div>
+                                <div class="btn-row__item col-1-4"><a class="btn btn__full btn__small" href="">50%</a></div>
+                                <div class="btn-row__item col-1-4"><a class="btn btn__full btn__small" href="">75%</a></div>
+                                <div class="btn-row__item col-1-4"><a class="btn btn__full btn__small" href="">100%</a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="flex-wrap"> 
+                            <div class="form-row__inline-label-s">Total:</div>
+                            <div class="form-row__inline-cont-s">
+                              <div class="form-row__name-option">BTC</div>
+                              <input class="form-row__input-s" type="text">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-row mt-15"><a class="btn btn__red btn__full" href="">Sell WAVES</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__item" id="market"> 
+                  <div class="flex-wrap flex-wrap__tabs"> 
+                    <div class="col-1-2"> 
+                      <div class="inner-block">tab 2</div>
+                    </div>
+                    <div class="col-1-2"> 
+                      <div class="inner-block"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__item" id="stop-limit"> 
+                  <div class="flex-wrap flex-wrap__tabs"> 
+                    <div class="col-1-2"> 
+                      <div class="inner-block">tab 3</div>
+                    </div>
+                    <div class="col-1-2"> 
+                      <div class="inner-block"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/libs.min.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <link href="styles/main.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="styles/assets.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media.css">
+    <link rel="stylesheet" href="styles/owl.carousel.min.css">
+    <link rel="stylesheet" href="styles/owl.theme.default.min.css">
+    <link rel="stylesheet" href="styles/animate.css">
+    <link rel="stylesheet" href="styles/magnific-popup.css">
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+
+
+    <div id="overlay"></div>
+    <main id="main">
+      <header class="header" id="header"> 
+        <div class="flex-wrap">
+          <div class="col-auto">
+            <h3 class="header__h3">Welcome back, Kyrill</h3>
+            <h1 class="header__h1">Thanks for being with us.</h1>
+          </div>
+          <div class="col-auto ml-auto"><a class="header__message" href="chat.html">
+              <svg class="icon icon--message">
+                <use xlink:href="img/svg-sprite.svg#message"></use>
+              </svg></a>
+            <div class="header__notifications">
+              <div class="header__notifications--badge"></div>
+              <svg class="icon icon--notifications">
+                <use xlink:href="img/svg-sprite.svg#notifications"></use>
+              </svg>
+            </div>
+            <div class="header__user"><a class="header__user-avatar" href="" style="background-image:url('img/pic-8.jpg')"></a>
+              <div class="header__user-inner">
+                <div class="header__user--name">Kirill Moneylover</div>
+                <div class="header__user--date">Member since 2019</div>
+                <div class="header__user--icon">
+                  <svg class="icon icon--arrow-down">
+                    <use xlink:href="img/svg-sprite.svg#arrow-down"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="header__user-dropdown"> 
+                <div class="header__user-dropdown--inner">
+                  <div class="header__user-list">
+                    <div class="header__user-list-item"><a class="header__user-list-link" href="">Настройки</a></div>
+                    <div class="header__user-list-item"><a class="header__user-list-link" href="">Выход</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="flex-wrap">
+        <div class="aside">
+          <div class="menu">
+            <div class="menu__item"><a class="menu__link menu__link--active" href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--chart">
+                    <use xlink:href="img/svg-sprite.svg#chart"></use>
+                  </svg>
+                </div><span class="menu__item-name">History</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--statistics">
+                    <use xlink:href="img/svg-sprite.svg#statistics"></use>
+                  </svg>
+                </div><span class="menu__item-name">Trading</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--settings">
+                    <use xlink:href="img/svg-sprite.svg#settings"></use>
+                  </svg>
+                </div><span class="menu__item-name">Tasks</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--strategy">
+                    <use xlink:href="img/svg-sprite.svg#strategy"></use>
+                  </svg>
+                </div><span class="menu__item-name">Strategies</span></a></div>
+            <div class="menu__item"><a class="menu__link " href="#">
+                <div class="menu__icon">
+                  <svg class="icon icon--support">
+                    <use xlink:href="img/svg-sprite.svg#support"></use>
+                  </svg>
+                </div><span class="menu__item-name">Support</span></a></div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="header-futures">
+            <div class="menu-futures">
+              <a href="#tariffs" class="active">Тарифы</a>
+              <a href="#accordion">Вопрос-ответ</a>
+              <a href="#videoLessons">Видео-уроки</a>
+            </div>
+          </div>
+
+          <section id="tariffs">
+            <h2>Тарифы</h2>
+
+            <div class="descr">
+              Вы можете в 1 клик продать монету на росте и купить на откате не вдаваясь в расчеты и суету действий, Бот все сделает за вас. 
+            </div>
+
+            <div class="slider-tariffs owl-carousel owl-theme">
+
+              <div class="item">
+                <div class="title">Тариф Basic</div>
+                <div class="subtitle">Вы можете в 1 клик продать монету на росте и купить.</div>
+                <ul>
+                  <li class="active"><img src="img/li-active.svg" alt=""> Торговля с собственным балансом</li>
+                  <li class="active"><img src="img/li-active.svg" alt="">Десять процентов комиссия</li>
+                  <li class="active"><img src="img/li-active.svg" alt="">Лучшая в мире поддержка</li>
+                  <li><img src="img/li.svg" alt="">Лучшая в мире поддержка</li>
+                  <li><img src="img/li.svg" alt="">Лучшая в мире поддержка</li>
+                </ul>
+                <a href="#">Преимущества Premium <img src="img/right-arrow.svg" alt=""></a>
+              </div>
+
+              <div class="item orange">
+                <div class="title">Тариф Basic</div>
+                <div class="subtitle">Вы можете в 1 клик продать монету на росте и купить.</div>
+                <ul>
+                  <li class="active"><img src="img/li-active_orange.svg" alt=""> Торговля с собственным балансом</li>
+                  <li class="active"><img src="img/li-active_orange.svg" alt="">Десять процентов комиссия</li>
+                  <li class="active"><img src="img/li-active_orange.svg" alt="">Лучшая в мире поддержка</li>
+                  <li><img src="img/li.svg" alt="">Лучшая в мире поддержка</li>
+                  <li><img src="img/li.svg" alt="">Лучшая в мире поддержка</li>
+                </ul>
+                <a href="#">Преимущества Premium <img src="img/right-arrow.svg" alt=""></a>
+              </div>
+
+              <div class="item">
+                <div class="title">Тариф Basic</div>
+                <div class="subtitle">Вы можете в 1 клик продать монету на росте и купить.</div>
+                <ul>
+                  <li class="active"><img src="img/li-active.svg" alt=""> Торговля с собственным балансом</li>
+                  <li class="active"><img src="img/li-active.svg" alt="">Десять процентов комиссия</li>
+                  <li class="active"><img src="img/li-active.svg" alt="">Лучшая в мире поддержка</li>
+                  <li><img src="img/li.svg" alt="">Лучшая в мире поддержка</li>
+                  <li><img src="img/li.svg" alt="">Лучшая в мире поддержка</li>
+                </ul>
+                <a href="#">Преимущества Premium <img src="img/right-arrow.svg" alt=""></a>
+              </div>
+
+            </div>
+          </section>
+
+          <section id="accordion">
+            <h2>Вопросы-ответы</h2>
+
+            <div class="accordion-container">
+              <div class="accordion">
+                <div class="set">
+                  <div class="head">
+                    <b>Могу ли я просто получить деньги?</b>
+                    <i class="fa fa-plus"></i>
+                  </div>
+                  <div class="text">
+                    <p>Бот во много раз ускоряет и упрощает все взаимодействия с криптовалютным рынком и сводит всю торговлю к нажатию пары кнопок через Телеграм</p>
+                  </div>
+                </div>
+
+                <div class="set">
+                  <div class="head">
+                    <b>Для чего мне ваш бот?</b>
+                    <i class="fa fa-plus"></i>
+                  </div>
+                  <div class="text">
+                    <p>Бот во много раз ускоряет и упрощает все взаимодействия с криптовалютным рынком и сводит всю торговлю к нажатию пары кнопок через Телеграм</p>
+                  </div>
+                </div>
+
+                <div class="set">
+                  <div class="head">
+                    <b>Могу ли я просто получить деньги?</b>
+                    <i class="fa fa-plus"></i>
+                  </div>
+                  <div class="text">
+                    <p>Бот во много раз ускоряет и упрощает все взаимодействия с криптовалютным рынком и сводит всю торговлю к нажатию пары кнопок через Телеграм</p>
+                  </div>
+                </div>
+
+                <div class="set">
+                  <div class="head">
+                    <b>Могу ли я просто получить деньги?</b>
+                    <i class="fa fa-plus"></i>
+                  </div>
+                  <div class="text">
+                    <p>Бот во много раз ускоряет и упрощает все взаимодействия с криптовалютным рынком и сводит всю торговлю к нажатию пары кнопок через Телеграм</p>
+                  </div>
+                </div>
+
+                <div class="set">
+                  <div class="head">
+                    <b>Могу ли я просто получить деньги?</b>
+                    <i class="fa fa-plus"></i>
+                  </div>
+                  <div class="text">
+                    <p>Бот во много раз ускоряет и упрощает все взаимодействия с криптовалютным рынком и сводит всю торговлю к нажатию пары кнопок через Телеграм</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion">
+                <div class="set">
+                  <div class="head">
+                    <b>Могу ли я просто получить деньги?</b>
+                    <i class="fa fa-plus"></i>
+                  </div>
+                  <div class="text">
+                    <p>Бот во много раз ускоряет и упрощает все взаимодействия с криптовалютным рынком и сводит всю торговлю к нажатию пары кнопок через Телеграм</p>
+                  </div>
+                </div>
+
+                <div class="set">
+                  <div class="head">
+                    <b>Для чего мне ваш бот?</b>
+                    <i class="fa fa-plus"></i>
+                  </div>
+                  <div class="text">
+                    <p>Бот во много раз ускоряет и упрощает все взаимодействия с криптовалютным рынком и сводит всю торговлю к нажатию пары кнопок через Телеграм</p>
+                  </div>
+                </div>
+
+                <div class="set">
+                  <div class="head">
+                    <b>Могу ли я просто получить деньги?</b>
+                    <i class="fa fa-plus"></i>
+                  </div>
+                  <div class="text">
+                    <p>Бот во много раз ускоряет и упрощает все взаимодействия с криптовалютным рынком и сводит всю торговлю к нажатию пары кнопок через Телеграм</p>
+                  </div>
+                </div>
+
+                <div class="set">
+                  <div class="head">
+                    <b>Могу ли я просто получить деньги?</b>
+                    <i class="fa fa-plus"></i>
+                  </div>
+                  <div class="text">
+                    <p>Бот во много раз ускоряет и упрощает все взаимодействия с криптовалютным рынком и сводит всю торговлю к нажатию пары кнопок через Телеграм</p>
+                  </div>
+                </div>
+
+                <div class="set">
+                  <div class="head">
+                    <b>Могу ли я просто получить деньги?</b>
+                    <i class="fa fa-plus"></i>
+                  </div>
+                  <div class="text">
+                    <p>Бот во много раз ускоряет и упрощает все взаимодействия с криптовалютным рынком и сводит всю торговлю к нажатию пары кнопок через Телеграм</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+              
+          </section>
+
+          <section id="videoLessons">
+            <h2>Видео-уроки</h2>
+
+            <div class="slider-videoLessons owl-carousel owl-theme">
+              <div>
+                <a class="item open-api-key" href="#create-api-key">
+                  <div class="head">
+                    <img src="img/api-1.svg" alt="" class="icon">
+                    <img src="img/plus.svg" alt="" class="plus">
+                  </div>
+                  <div class="title">Создание API Ключей</div>
+                  <div class="subtitle">Быстро пиздец Двойная конвертаци учшие</div>
+                </a>
+
+                <a class="item open-api-key" href="#create-api-key">
+                  <div class="head">
+                    <img src="img/api-1.svg" alt="" class="icon">
+                    <img src="img/plus.svg" alt="" class="plus">
+                  </div>
+                  <div class="title">Создание API Ключей</div>
+                  <div class="subtitle">Быстро пиздец Двойная конвертаци учшие</div>
+                </a>
+              </div>
+
+              <div>
+                <a class="item open-api-key" href="#create-api-key">
+                  <div class="head">
+                    <img src="img/api-1.svg" alt="" class="icon">
+                    <img src="img/plus.svg" alt="" class="plus">
+                  </div>
+                  <div class="title">Создание API Ключей</div>
+                  <div class="subtitle">Быстро пиздец Двойная конвертаци учшие</div>
+                </a>
+
+                <a class="item open-api-key" href="#create-api-key">
+                  <div class="head">
+                    <img src="img/api-1.svg" alt="" class="icon">
+                    <img src="img/plus.svg" alt="" class="plus">
+                  </div>
+                  <div class="title">Создание API Ключей</div>
+                  <div class="subtitle">Быстро пиздец Двойная конвертаци учшие</div>
+                </a>
+              </div>
+
+              <div>
+                <a class="item open-api-key" href="#create-api-key">
+                  <div class="head">
+                    <img src="img/api-1.svg" alt="" class="icon">
+                    <img src="img/plus.svg" alt="" class="plus">
+                  </div>
+                  <div class="title">Создание API Ключей</div>
+                  <div class="subtitle">Быстро пиздец Двойная конвертаци учшие</div>
+                </a>
+
+                <a class="item open-api-key" href="#create-api-key">
+                  <div class="head">
+                    <img src="img/api-1.svg" alt="" class="icon">
+                    <img src="img/plus.svg" alt="" class="plus">
+                  </div>
+                  <div class="title">Создание API Ключей</div>
+                  <div class="subtitle">Быстро пиздец Двойная конвертаци учшие</div>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <div class="payment">
+
+            <div class="icons">
+              <img src="img/payment/btc.svg" alt="">
+              <img src="img/payment/ether.svg" alt="">
+              <img src="img/payment/apple-pay.svg" alt="">
+              <img src="img/payment/visa.svg" alt="">
+              <img src="img/payment/mastercard.svg" alt="">
+            </div>
+
+            <a href="#payment-method" class="btn transparent payment-method"><span>Оплатить Basic</span><span>199 / Месяц</span></a>
+            <a href="#payment-method" class="btn blue payment-method"><span>Оплатить Premium</span><span>399 / Месяц</span></a>
+            
+          </div>
+        </div>
+      </div>
+
+      <div id="create-api-key" class="create-api-key mfp-hide white-popup-block">
+        <img src="img/popup-key.svg" alt="" class="key">
+        <h2>Создание API Ключей </h2>
+
+        <div class="grid">
+          <div class="item">
+            <div class="video">
+              <iframe src="https://www.youtube.com/embed/LrXxRigRabw?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="descr">Создание API Ключей на Binance </div>
+          </div>
+
+          <div class="item">
+            <div class="video">
+              <iframe src="https://www.youtube.com/embed/LrXxRigRabw?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="descr">Создание API Ключей на Binance </div>
+          </div>
+
+          <div class="item">
+            <div class="video">
+              <iframe src="https://www.youtube.com/embed/LrXxRigRabw?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="descr">Создание API Ключей на Binance </div>
+          </div>
+
+          <div class="item">
+            <div class="video">
+              <iframe src="https://www.youtube.com/embed/LrXxRigRabw?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="descr">Создание API Ключей на Binance </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="payment-method" class="mfp-hide white-popup-block">
+        <h2>Выберите способ оплаты <img src="img/lock.svg" alt="lock"></h2>
+
+        <div class="grid">
+
+          <div class="item">
+            <div class="container-img">
+              <img src="img/payment-method/visa.svg" alt="">
+              <img src="img/payment-method/mastercard.svg" alt="">
+            </div>
+
+            <div class="descr">Visa / MasterCard</div>
+          </div>
+
+          <div class="item">
+            <div class="container-img">
+              <img src="img/payment-method/apple-pay.svg" alt="">
+            </div>
+
+            <div class="descr">Apple Pay</div>
+          </div>
+
+          <div class="item">
+            <div class="container-img">
+              <img src="img/payment-method/google-pay.svg" alt="">
+            </div>
+
+            <div class="descr">Google Pay</div>
+          </div>
+
+          <div class="item">
+            <div class="container-img">
+              <img src="img/payment-method/btc.svg" alt="">
+              <img src="img/payment-method/eth.svg" alt="">
+            </div>
+
+            <div class="descr">Крипта</div>
+          </div>
+
+        </div>
+
+        <div class="popup-descr">Оплата происходит по защищенному соеденению</div>
+      </div>
+
+      <div class="open-menu">
+        <img src="img/open-menu.svg" alt="">
+      </div>
+
+
+
+      <script type="text/javascript" src="scripts/jquery.min.js"></script>
+      <script type="text/javascript" src="scripts/libs.min.js"></script>
+      <script type="text/javascript" src="scripts/main.js"></script>
+
+      <script src="scripts/owl.carousel.min.js"></script>
+      <script src="scripts/script.js"></script>
+      <script src="scripts/jquery.magnific-popup.js"></script>
+    </main>
+  </body>
+</html>
